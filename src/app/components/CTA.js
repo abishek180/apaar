@@ -7,7 +7,7 @@ export const CTA = () => {
         <p className=" text-[38px]  text-black font-bold">Elevate sdfsd your scheduling</p>
         <div className=" font-medium  opacity-[0.75]">
           <p className="text-[16px]">
-            Start using the best school management software platform now- and
+            Start using the best school management softsdfsdafware platform now- and
             it's free!
           </p>
         </div>
