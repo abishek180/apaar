@@ -101,7 +101,7 @@ export const Features = () => {
         </div>
       </div> */}
 
-      <div className="  flex  justify-evenly mt-20 ">
+      <div className="  flex  justify-evenly mt-20 p-6">
         <div className="w-[608px] h-[635px] rounded-3xl [background:linear-gradient(180deg,_#fff,_#ebf4ff)]  border-[1px] border-solid border-gainsboro-200 p-5">
           <div className=" w-[70px] h-70px rounded-[16px] flex justify-center items-center px-3 py-3 [background:linear-gradient(180deg,_#CFDDDB_0%,_#C0DAD6_100%)]">
             <Image className="w-[47px] h-[47px]" src={exampaper} />
