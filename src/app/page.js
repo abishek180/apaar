@@ -24,7 +24,7 @@ export default function Home() {
       <CTA />
       <Business />
       <Footer />
-      {/* <NavBar2/> */}
+      
     </div>
   );
 }
