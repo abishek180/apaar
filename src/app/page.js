@@ -1,5 +1,5 @@
 "use client";
-// import Image from "next/image";
+import Image from "next/image";
 import { NavBar } from "./components/NavBar";
 import { Hero } from "./components/Hero";
 import { Client } from "./components/Client";
@@ -15,8 +15,10 @@ import { Footer } from "./components/Footer";
 export default function Home() {
   return (
     <div className=" text-black font-plus-jakarta-sans max-w-screen-2xl backgroundImage">
+      
       <NavBar />
       <Hero />
+      <Image/>
       <Client />
       <Features />
       <USP />
