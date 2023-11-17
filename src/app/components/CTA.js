@@ -3,7 +3,7 @@ import React from "react";
 export const CTA = () => {
   return (
     <div>
-      <div className=" rounded-lg bg-gray-100 flex flex-col justify-center items-center text-center mt-32 gap-6 p-5">
+      <div className=" rounded-lg bg-gray-100 flex flex-col justify-center items-center text-center mt-32 gap-6 p-7">
         <p className=" md:text-[38px] text-[24px] text-black font-bold">
           Elevate your scheduling
         </p>
