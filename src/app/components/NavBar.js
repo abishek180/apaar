@@ -15,12 +15,12 @@ export const NavBar = () => {
       <div className="md:flex md:justify-around md:gap-[180px] md:mt-3">
         <div className="md:flex md:flex-row md:gap-12">
           <div className="md:p-0  flex justify-between md:items-center">
-            <p className="md:text-[24px] text-[32px] md:p-0 p-3 md:font-black font-extrabold">
+            <p className="md:text-[24px] text-[32px] md:p-0 p-5 md:font-black font-extrabold">
               APAAR
             </p>
             <div
               onClick={handleNav}
-              className=" block md:hidden md:p-0 pt-1 pr-2"
+              className=" block md:hidden md:p-0 pt-2 pr-2"
             >
               <Image src={menu} alt="menu" />
             </div>
