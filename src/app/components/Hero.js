@@ -16,23 +16,23 @@ export const Hero = () => {
   const toggle = () => setModal(!modal);
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center mt-16 gap-10">
-        <div className="w-[1074px]">
-          <h1 className="text-[58px] font-extrabold ">
+      <div className="flex flex-col justify-center items-center text-center md:mt-28 mt-24 md:gap-10 gap-5">
+        <div className="md:w-[1074px] w-[364px]">
+          <h1 className="md:text-[58px] text-[32px] font-extrabold text-left md:text-center">
             All-in-One Platform for Academic Automation and Resolution.
           </h1>
         </div>
-        <div className="md:text-[20px] sm:text-[16px] leading-[157%] font-medium text-darkslategray-300  sm:w-[386px] md:w-[901px]">
-          <p>
+        <div className="md:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[901px]">
+          <p className="text-left md:text-center">
             Seamlessly managing academic tasks, student records, and
             communication channels, APAAR empowers schools to focus on what
             truly matters - education.
           </p>
         </div>
         <div>
-          <Button className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] sm:text-[16px] hover:bg-slate-800">
+          <button className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] text-[16px] hover:bg-black font-bold">
             Get started. It’s for
-            <span className="md:text-[26px] sm:text-[16px] text-orange-300">
+            <span className="md:text-[26px] text-[16px] text-orange-300 font-bold">
               FREE
             </span>
             <div
@@ -41,7 +41,7 @@ export const Hero = () => {
             >
               <Image src={rightline} />
             </div>
-          </Button>
+          </button>
 
           <Modal
             isOpen={modal}
@@ -52,10 +52,7 @@ export const Hero = () => {
               <MyForm />
             </ModalBody>
             <ModalFooter>
-              <Button color="primary" onClick={toggle}>
-                Do Something
-              </Button>{" "}
-              <Button color="secondary" onClick={toggle}>
+              <Button color="secondary" onClick={toggle} className="boreder-2 border-solid border-red-500 bg-orange-500 ">
                 Cancel
               </Button>
             </ModalFooter>
@@ -71,3 +68,5 @@ export const Hero = () => {
     </div>
   );
 };
+
+

@@ -9,11 +9,11 @@ import { Testimony } from "./components/Testimony";
 import { CTA } from "./components/CTA";
 import { Business } from "./components/Business";
 import { Footer } from "./components/Footer";
-import { NavBar2 } from "./components/NavBar2";
+
 
 export default function Home() {
   return (
-    <div className=" text-black font-plus-jakarta-sans max-w-screen-xl  ">
+    <div className=" text-black font-plus-jakarta-sans max-w-screen-2xl">
       <NavBar />
       <Hero />
       <Image />
@@ -24,7 +24,6 @@ export default function Home() {
       <CTA />
       <Business />
       <Footer />
-      
     </div>
   );
 }
