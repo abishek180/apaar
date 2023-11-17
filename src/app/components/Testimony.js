@@ -50,8 +50,8 @@ export const Testimony = () => (
           spaceBetween: 40,
         },
       }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
+     
+      modules={[Pagination]}
       className="mySwiper"
     >
       <SwiperSlide className="mt-4">
