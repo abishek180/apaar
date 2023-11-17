@@ -7,7 +7,7 @@ import layer from "../Images/ace.png";
 export const Client = () => {
   return (
     <div>
-      <div className=" md:text-[24px] text-[16px] leading-normal  md:mt-[150px] mt-16 flex justify-center gap-1">
+      <div className=" md:text-[24px] text-[12px] leading-normal  md:mt-[150px] mt-16 flex justify-center gap-1">
         <span className="text-gray-700 font-normal">Our Trusted</span><span className="font-bold  text-[#000]">Users</span>
       </div>
       <div className="md:flex md:flex-row md:justify-evenly md:gap-[115.082px] gap-5 md:mt-20 mt-8 flex flex-col text-[#858585]">
