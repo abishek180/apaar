@@ -22,7 +22,7 @@ export const Hero = () => {
             All-in-One Platform for Academic Automation and Resolution.
           </h1>
         </div>
-        <div className="md:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[901px]">
+        <div className="md:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[901px] p-3">
           <p className="text-left md:text-center">
             Seamlessly managing academic tasks, student records, and
             communication channels, APAAR empowers schools to focus on what

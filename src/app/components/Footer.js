@@ -35,8 +35,8 @@ export const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="md:mt-5 mt-16 md:flex md:flex-row md:justify-between flex flex-col">
-        <p className="text-[16px] md:flex flex justify-center">
+      <div className="md:mt-5 mt-20 md:flex md:flex-row md:justify-between flex flex-col">
+        <p className="text-[16px] md:flex flex justify-center ">
           <Image
             src={copyright}
             alt="copyright"
