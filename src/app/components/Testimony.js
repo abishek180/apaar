@@ -172,7 +172,7 @@ export const Testimony = () => (
         </div>
       </SwiperSlide>
     </Swiper>
-    <div className="flex gap-10 mt-5">
+    {/* <div className="flex gap-10 mt-5">
       <button className="bg-[#F8F8F8] rounded-[150px] md:p-4 p-[11.667px] flex justify-center items-center">
         <Image
           src={leftarrow}
@@ -182,6 +182,6 @@ export const Testimony = () => (
       <button className="bg-[#2C2C2C] rounded-[150px] md:p-4 p-[11.667px] flex justify-center items-center">
         <Image src={rightarrow} alt="rightarrow" />
       </button>
-    </div>
+    </div> */}
   </div>
 );
