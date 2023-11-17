@@ -36,16 +36,19 @@ export const Footer = () => {
       </div>
       <hr />
       <div className="mt-5 md:flex md:flex-row md:justify-between flex flex-col">
-       
         <p className="text-[16px] md:flex flex justify-center">
-        <Image src={copyright} className="w-[13.26821px] md:mb-3"/>
+          <Image
+            src={copyright}
+            alt="copyright"
+            className="w-[13.26821px] md:mb-3"
+          />
           Copyright Apaar 2023.
           <span className="md:block hidden">All rights reserved</span>
         </p>
         <div className="flex gap-2 justify-center md:mt-0 mt-5">
-          <Image src={facebook} />
-          <Image src={twitter} />
-          <Image src={linkdin} />
+          <Image src={facebook} alt="facebook" />
+          <Image src={twitter} alt="twitter" />
+          <Image src={linkdin} alt="linkdin" />
         </div>
       </div>
     </div>

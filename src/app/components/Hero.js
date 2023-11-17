@@ -39,7 +39,7 @@ export const Hero = () => {
               className="rounded-[50px] bg-white md:w-[27px] md:h-[27px] sm:w-[16.596px] sm:h-[16.596px] text-center justify-center flex"
               onClick={toggle}
             >
-              <Image src={rightline} />
+              <Image src={rightline} alt="right" />
             </div>
           </button>
 
@@ -52,21 +52,23 @@ export const Hero = () => {
               <MyForm />
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={toggle} className="boreder-2 border-solid border-red-500 bg-orange-500 ">
+              <Button
+                color="secondary"
+                onClick={toggle}
+                className="boreder-2 border-solid border-red-500 bg-orange-500 "
+              >
                 Cancel
               </Button>
             </ModalFooter>
           </Modal>
         </div>
         <div>
-          <Image src={google22} />
+          <Image src={google22} alt="google" />
         </div>
         <div className="w-[346px] h-[236.13px] md:w-[791.282px] md:h-[540.016px]">
-          <Image src={dashboard} />
+          <Image src={dashboard} alt="dashboard" />
         </div>
       </div>
     </div>
   );
 };
-
-

@@ -23,31 +23,55 @@ export const USP = () => {
         <div className=" md:flex md:flex-row flex flex-col gap-[42px]">
           <div className="flex flex-row gap-[42px]">
             <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]">
-              <Image className="  md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={attendance} />
+              <Image
+                className="  md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={attendance}
+                alt="attendance"
+              />
               <div className=" font-semibold ">Attendence</div>
             </div>
-            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]" >
-              <Image className=" rounded md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={assignment} />
+            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]">
+              <Image
+                className=" rounded md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={assignment}
+                alt="assignment"
+              />
               <div className=" font-semibold ">Assignments</div>
             </div>
           </div>
           <div className="flex flex-row md:gap-[42px] justify-around gap-[42px]">
             <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px] ">
-              <Image className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={exam} />
+              <Image
+                className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={exam}
+                alt="exam"
+              />
               <div className=" font-semibold ">Exam</div>
             </div>
             <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]">
-              <Image className="md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={timetable} />
+              <Image
+                className="md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={timetable}
+                alt="timetable"
+              />
               <div className=" font-semibold">Time Table</div>
             </div>
           </div>
           <div className="flex flex-row md:gap-[42px] gap-[60px]">
             <div className="flex justify-center items-center flex-col gap-2.5 bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]">
-              <Image className="md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={study} />
+              <Image
+                className="md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={study}
+                alt="study"
+              />
               <div className=" font-semibold ">Study Room</div>
             </div>
             <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[23.704px] py-[25.397px] md:px-[30px] md:py-[68px]">
-              <Image className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]" src={fee} />
+              <Image
+                className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
+                src={fee}
+                alt="fee"
+              />
               <div className=" font-semibold">Fee</div>
             </div>
           </div>
@@ -57,7 +81,11 @@ export const USP = () => {
             Click to View More
           </div>
           <button>
-            <Image className="w-[20px] h-[20px] md:w-[24px] md:h-[30px]" src={rightarrow} />
+            <Image
+              className="w-[20px] h-[20px] md:w-[24px] md:h-[30px]"
+              src={rightarrow}
+              alt="rightarrow"
+            />
           </button>
         </div>
       </div>

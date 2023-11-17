@@ -22,7 +22,7 @@ export const NavBar = () => {
               onClick={handleNav}
               className=" block md:hidden md:p-0 pt-1 pr-2"
             >
-              <Image src={menu} />
+              <Image src={menu} alt="menu" />
             </div>
           </div>
           <div className="hidden md:flex md:items-center font-poppins md:gap-10 ">
@@ -41,7 +41,7 @@ export const NavBar = () => {
                   className="leading-[28px] font-medium hover:text-[grey] flex gap-2"
                 >
                   Product
-                  <Image src={down} />
+                  <Image src={down} alt="down" />
                 </a>
               </li>
               <li className="my-6 md:my-0">
@@ -49,7 +49,7 @@ export const NavBar = () => {
                   href="#"
                   className="leading-[28px] font-medium hover:text-[grey]"
                 >
-                 About Us
+                  About Us
                 </a>
               </li>
               <li className="my-6 md:my-0">
@@ -57,14 +57,14 @@ export const NavBar = () => {
                   href="#"
                   className="leading-[28px] font-medium hover:text-[grey]"
                 >
-                   Contact Us
+                  Contact Us
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="md:p-4 p-0">
-          <button className="md:block md:rounded-[8px] md:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden">
+          <button className="md:block md:rounded-[8px] md:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold">
             Get Started
           </button>
         </div>
@@ -78,7 +78,7 @@ export const NavBar = () => {
       >
         <div className="flex w-full justify-end items-center">
           <div onClick={handleNav} className=" cursor-pointer">
-            <Image src={close} />
+            <Image src={close} alt="close" />
           </div>
         </div>
 
@@ -98,7 +98,7 @@ export const NavBar = () => {
                 className="leading-[28px] font-medium hover:text-[grey] flex gap-2"
               >
                 Product
-                <Image src={down} />
+                <Image src={down} alt="down" />
               </a>
             </li>
             <li className="my-6 md:my-0">
@@ -106,7 +106,7 @@ export const NavBar = () => {
                 href="#"
                 className="leading-[28px] font-medium hover:text-[grey]"
               >
-                 About Us
+                About Us
               </a>
             </li>
             <li className="my-6 md:my-0">

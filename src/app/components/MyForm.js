@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import dashboard from '../Images/dashboard.png'
+import dashboard from "../Images/dashboard.png";
 
 export const MyForm = () => {
   return (
     <div>
       <div className="flex justify-center items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)]">
-        <Image src={dashboard} className="w-[599.306px] h-[409px]"/>
+        <Image
+          src={dashboard}
+          alt="dashboard"
+          className="w-[599.306px] h-[409px]"
+        />
         <form class="w-full max-w-lg">
           <p className="text-[#060606] text-[37px] font-extrabold">
             Digitize your school in minutes with Apaar integrated platform
@@ -25,20 +29,18 @@ export const MyForm = () => {
                 type="text"
                 placeholder="Enter  Your Name"
               />
-              
             </div>
             <div class="w-full md:w-1/2 px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-last-name"
               >
-               Select your organization type
+                Select your organization type
               </label>
               <input
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight"
                 id="grid-last-name"
                 type="radio"
-              
               />
             </div>
           </div>
@@ -57,7 +59,7 @@ export const MyForm = () => {
                 placeholder="******************"
               />
               <p class="text-gray-600 text-xs italic">
-                Make it as long and as crazy as you'd like
+                Make it as long and as crazy as you d like
               </p>
             </div>
           </div>
