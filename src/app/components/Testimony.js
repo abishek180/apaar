@@ -177,7 +177,6 @@ export const Testimony = () => (
         <Image
           src={leftarrow}
           alt="leftarrow"
-          className="md:w-[37px] md:h-[37px] w-[23.333px] h-[23.333px]"
         />
       </button>
       <button className="bg-[#2C2C2C] rounded-[150px] md:p-4 p-[11.667px] flex justify-center items-center">
