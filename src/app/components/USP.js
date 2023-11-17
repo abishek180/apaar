@@ -40,7 +40,7 @@ export const USP = () => {
             </div>
           </div>
           <div className="flex flex-row md:gap-[42px] justify-around gap-[42px]">
-            <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[40px] py-[40px] md:px-[30px] md:py-[68px] ">
+            <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[45px] py-[45px] md:px-[30px] md:py-[68px] ">
               <Image
                 className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
                 src={exam}
@@ -66,7 +66,7 @@ export const USP = () => {
               />
               <div className=" font-semibold ">Study Room</div>
             </div>
-            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[40px] py-[40px] md:px-[30px] md:py-[68px]">
+            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] px-[50px] py-[50px] md:px-[30px] md:py-[68px]">
               <Image
                 className=" md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
                 src={fee}
