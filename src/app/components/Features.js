@@ -9,8 +9,8 @@ export const Features = () => {
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-center md:gap-10 gap-5 md:mt-20 mt-10">
-        <div className="md:w-[926px] w-[385px]">
-          <h1 className="md:text-[52px] text-[32px] font-extrabold leading-normal">
+        <div className="md:w-[956px] w-[385px] ">
+          <h1 className="md:text-[52px] text-[32px] p-1 font-extrabold leading-normal">
             Transforming Education One Feature at a Time
           </h1>
         </div>
