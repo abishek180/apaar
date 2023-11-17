@@ -18,6 +18,38 @@ export const Testimony = () => (
       pagination={{
         clickable: true,
       }}
+      breakpoints={{
+
+        360:{
+          slidesPerView:1,
+          spaceBetween:20,
+        }, 
+
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+
+        1024:{
+          slidesPerView:3,
+          spaceBetween:40,
+        },
+
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+
+        1536:{
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }}
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper"
@@ -52,7 +84,7 @@ export const Testimony = () => (
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px] ">
-              <div className=" leading-normal font-medium">Annette Black</div>
+              <div className=" leading-normal font-medium text-[14.585px] ">Annette Black</div>
               <div className="  leading-normal  text-[12.762px] flex">
                 <span className="text-[#42526B] ">Principal,</span>
                 <p className="text-[#EA9B7A] font-bold ">NIMS Uae</p>
