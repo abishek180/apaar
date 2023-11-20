@@ -40,6 +40,7 @@ export const Hero = () => {
         <div>
           <motion.button
             whileHover={{ scale: 1.1 }}
+            transition={{repeat:Infinity,duration:0.6}}
             onClick={handleClick}
             className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] text-[16px] hover:bg-black font-bold"
           >
