@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import nmsdubai from "../Images/Rectangle.png";
-import oxford from "../Images/ace.png";
+import oxford from "../Images/oxford.png";
 import layer from "../Images/ace.png";
 
 export const Client = () => {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import down from "../Images/down.svg";
 import menu from "../Images/menu.svg";
 import close from "../Images/close.svg";
+import { motion } from "framer-motion";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,9 +65,11 @@ export const NavBar = () => {
           </div>
         </div>
         <div className="md:p-4 p-0">
-          <button className="md:block hidden md:rounded-[8px] md:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold">
+          <motion.button
+           whileHover={{scale:1.1}}
+           className="md:block hidden md:rounded-[8px] md:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold">
             Get Started
-          </button>
+          </motion.button>
         </div>
       </div>
       <div

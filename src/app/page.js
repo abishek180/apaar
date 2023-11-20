@@ -14,8 +14,7 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className=" text-black font-plus-jakarta-sans max-w-screen-2xl backgroundImage">
-      
+    <div className=" text-black font-plus-jakarta-sans max-w-screen-3xl backgroundImage">
       <NavBar />
       <Hero />
       <Image/>
