@@ -46,7 +46,7 @@ export const Testimony = () => (
         },
 
         1536:{
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 20,
         },
       }}
