@@ -17,7 +17,7 @@ export default function page() {
             <h1 className="md:text-[24px] text-[16px] font-semibold text-[#FFF]">All-in-One Platform for Academic Automation and Resolution.</h1>
           </div>
         </div>
-        <div className="md:p-[60px] p-[24px] flex justify-center items-center md:w-[600px] w-[400px]">
+        <div className="md:p-[60px] p-[24px] flex justify-center items-center md:w-[600px] w-[430px]">
           <form class="">
             <div className="px-3">
               <p className="text-[#060606] text-[24px] md:text-[37px] font-extrabold">
