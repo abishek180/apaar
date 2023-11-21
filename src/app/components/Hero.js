@@ -1,32 +1,21 @@
 "use client";
-import React from "react";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import React from "react";;
 import google22 from "../Images/google.png";
 import dashboard from "../Images/apaar-app-screen.png";
-import bgHero from "../Images/background.svg"
+import bgHero from "../Images/background.svg";
 import Image from "next/image";
 import rightline from "../Images/right-outline.svg";
 import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
-import { MyForm } from "./MyForm";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 export const Hero = () => {
-  // // Modal open state
-  // const [modal, setModal] = useState(false);
-
-  // // Toggle for Modal
-  // const toggle = () => setModal(!modal);
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push("/MyForm");
-  };
 
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-center md:mt-28 mt-24 md:gap-10 gap-5">
-        <Image src={bgHero} className="absolute w-full top-0 left-0 z-[-1]"/> 
+        <Image src={bgHero} className="absolute w-full top-0 left-0 z-[-1]" />
         <div className="md:w-[1074px] w-[364px]">
           <h1 className="md:text-[58px] text-[32px] font-extrabold text-left md:text-center">
             All-in-One Platform for Academic Automation and Resolution.
@@ -40,39 +29,22 @@ export const Hero = () => {
           </p>
         </div>
         <div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{duration:0.3}}
-            onClick={handleClick}
-            className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] text-[16px] hover:bg-black font-bold"
-          >
-            Get started. It’s for
-            <span className="md:text-[26px] text-[16px] text-orange-300 font-bold">
-              FREE
-            </span>
-            <div className="rounded-[50px] bg-white md:w-[27px] md:h-[27px] sm:w-[16.596px] sm:h-[16.596px] text-center justify-center flex">
-              <Image src={rightline} alt="right" />
-            </div>
-          </motion.button>
-
-          {/* <Modal
-            isOpen={modal}
-            toggle={toggle}
-            modalTransition={{ timeout: 1000 }}
-          >
-            <ModalBody>
-              <MyForm />
-            </ModalBody>
-            <ModalFooter>
-              <Button
-                color="secondary"
-                onClick={toggle}
-                className="boreder-2 border-solid border-red-500 bg-orange-500 "
-              >
-                Cancel
-              </Button>
-            </ModalFooter>
-          </Modal> */}
+          <Link href="/components/Myform">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+              className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] text-[16px] hover:bg-black font-bold"
+            >
+              Get started. It’s for
+              <span className="md:text-[26px] text-[16px] text-orange-300 font-bold">
+                FREE
+              </span>
+              <div className="rounded-[50px] bg-white md:w-[27px] md:h-[27px] sm:w-[16.596px] sm:h-[16.596px] text-center justify-center flex">
+                <Image src={rightline} alt="right" />
+                
+              </div>
+            </motion.button>
+          </Link>
         </div>
         <div>
           <Image src={google22} alt="google" />

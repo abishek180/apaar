@@ -9,15 +9,15 @@ import { Testimony } from "./components/Testimony";
 import { CTA } from "./components/CTA";
 import { Business } from "./components/Business";
 import { Footer } from "./components/Footer";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Home() {
   return (
+   
     <div className=" text-black font-plus-jakarta-sans max-w-screen-3xl backgroundImage">
       <NavBar />
       <Hero />
-      <Image/>
+      <Image />
       <Client />
       <Features />
       <USP />
@@ -26,5 +26,6 @@ export default function Home() {
       <Business />
       <Footer />
     </div>
+    
   );
 }
