@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 
 export const Testimony = () => (
-  <div className="max-w-screen-2xl flex flex-col justify-center items-center text-center lg:mt-40 mt-20 gap-10">
+  <div className="max-w-screen-2xl flex flex-col justify-center items-center text-center lg:mt-40 mt-20 mx-auto gap-10">
     <div className=" lg:text-[52px] font-extrabold text-[32px] ">
       What they Say’s ?
     </div>
@@ -80,7 +80,7 @@ export const Testimony = () => (
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
         {" "}
-        <div className="rounded-2xl bg-secondary-50 h-[364.62px]  bg-[#FFF9EE] p-6">
+        <div className="rounded-2xl bg-secondary-50 h-[364.62px] bg-[#FFF9EE] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px] ">
