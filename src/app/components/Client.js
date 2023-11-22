@@ -10,7 +10,7 @@ export const Client = () => {
       <div className=" md:text-[24px] text-[12px] leading-normal  lg:mt-[150px] mt-16 flex justify-center gap-1">
         <span className="text-gray-700 font-normal">Our Trusted</span><span className="font-bold  text-[#000]">Users</span>
       </div>
-      <div className="lg:flex lg:flex-row lg:justify-evenly lg:gap-[115.082px] gap-5 lg:mt-20 mt-8 flex flex-col text-[#858585]">
+      <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[100.082px] gap-5 lg:mt-20 mt-8 flex flex-col text-[#858585]">
         <div className="flex flex-row justify-evenly lg:gap-[115.082px] md:gap-24">
           <div className="flex mr-8 lg:mr-0">
             <Image src={nmsdubai} alt="nmsdubai" className="lg:w-[67.77px] lg:h-[70.328px] w-[43.369px] h-[45.005px]"/>

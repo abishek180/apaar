@@ -5,22 +5,22 @@ import sidedashboard from "../../Images/sidedashboard.png";
 import { Button } from "reactstrap";
 export default function page() {
   return (
-    <div className="lg:flex lg:justify-center lg:items-center h-screen mx-auto">
-      <div className="flex flex-col md:flex md:flex-row md:justify-center md:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] md:w-[900px] md:h-[742px] w-[400px] h-[730px]  rounded-[30px] bg-gray-300">
-        <div className="w-[400px] h-[90px] md:w-[394px] md:h-[742px] bg-[#2C2C2C] md:flex md:flex-col md:justify-center  md:items-center md:rounded-l-[30px]">
+    <div className="lg:flex lg:justify-center lg:items-center h-screen">
+      <div className="flex flex-col lg:flex lg:flex-row lg:justify-center lg:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] lg:w-[900px] lg:h-[742px] md:h-screen md:w-screen w-screen h-screen rounded-[30px] bg-gray-300">
+        <div className="w-screen h-[90px] lg:w-[394px]  md:w-screen  lg:h-[742px] bg-[#2C2C2C] lg:flex lg:flex-col lg:justify-center  lg:items-center lg:rounded-l-[30px]">
           <Image
             src={sidedashboard}
             alt="dashboard"
-            className="hidden md:block w-[330px] h-[390px] ml-12"
+            className="hidden lg:block w-[330px] h-[390px] ml-12"
           />
-          <div className="w-[314px] h-[90px] md:flex md:justify-center md:items-left md:ml-16 md:pt-12 md:pl-0 pl-7 pt-6">
-            <h1 className="md:text-[24px] text-[16px] font-semibold text-[#FFF]">All-in-One Platform for Academic Automation and Resolution.</h1>
+          <div className="w-[314px] h-[90px] lg:flex lg:justify-center lg:items-left lg:ml-16 lg:pt-12 lg:pl-0 pl-7 pt-6">
+            <h1 className="lg:text-[24px] text-[16px] font-semibold text-[#FFF]">All-in-One Platform for Academic Automation and Resolution.</h1>
           </div>
         </div>
-        <div className="md:p-[60px] p-[24px] flex justify-center items-center md:w-[600px] w-[400px]">
+        <div className="lg:p-[60px] p-[24px] flex justify-center items-center  lg:w-[600px]">
           <form class="">
             <div className="">
-              <p className="text-[#060606] text-[24px] md:text-[32px] font-extrabold">
+              <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function page() {
               </div>
             </div>
             <div className="mt-10">
-              <Button className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] md:w-[400px] w-[382px] hover:bg-black">
+              <Button className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black">
                 Submit
               </Button>
             </div>
