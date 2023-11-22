@@ -54,9 +54,9 @@ export const Testimony = () => (
       modules={[Pagination]}
       className="mySwiper"
     >
-      <SwiperSlide className="mt-4">
+      <SwiperSlide className="mt-4 p-4">
         {" "}
-        <div className=" rounded-2xl bg-[#F5F6F7] w-[386.5px] h-[364.62px] p-6">
+        <div className=" rounded-2xl bg-[#F5F6F7] h-[364.62px] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px]">
@@ -78,9 +78,9 @@ export const Testimony = () => (
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="mt-4">
+      <SwiperSlide className="mt-4 p-4">
         {" "}
-        <div className="rounded-2xl bg-secondary-50 w-[386.5px] h-[364.62px]  bg-[#FFF9EE] p-6">
+        <div className="rounded-2xl bg-secondary-50 h-[364.62px]  bg-[#FFF9EE] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px] ">
@@ -101,8 +101,8 @@ export const Testimony = () => (
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="mt-4">
-        <div className="rounded-2xl bg-success-50 w-[386.5px] h-[364.62px]  bg-[#E7F5E8] p-6">
+      <SwiperSlide className="mt-4 p-4">
+        <div className="rounded-2xl bg-success-50 h-[364.62px]  bg-[#E7F5E8] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px]">
@@ -125,8 +125,8 @@ export const Testimony = () => (
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="mt-4">
-        <div className=" rounded-2xl bg-[#F5F6F7] w-[386.5px] h-[364.62px] p-6">
+      <SwiperSlide className="mt-4 p-4">
+        <div className=" rounded-2xl bg-[#F5F6F7] h-[364.62px] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px]">
@@ -148,8 +148,8 @@ export const Testimony = () => (
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="mt-4">
-        <div className=" rounded-2xl bg-[#F5F6F7] w-[386.5px] h-[364.62px] p-6">
+      <SwiperSlide className="mt-4 p-4">
+        <div className=" rounded-2xl bg-[#F5F6F7]  h-[364.62px] p-6">
           <div className="flex gap-3">
             <Image src={user} alt="user" />
             <div className="flex flex-col items-start justify-start gap-[3.65px]">
