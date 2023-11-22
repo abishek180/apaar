@@ -7,7 +7,7 @@ import copyright from "../Images/copyright.svg";
 
 export const Footer = () => {
   return (
-    <div className=" bg-[#0F1420]  text-white px-[25px] py-[60px] md:pt-[100px] md:pr-[129px] md:pb-[85px] md:pl-[103px]">
+    <div className=" bg-[#0F1420]  text-white px-[25px] py-[60px] lg:pt-[100px] lg:pr-[129px] lg:pb-[85px] lg:pl-[103px]">
       <div className="flex flex-col md:flex md:flex-row md:justify-between mb-5">
         <div className="">
           <div className=" text-[32px] font-black ">APAAR</div>

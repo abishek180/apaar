@@ -14,15 +14,14 @@ export const Hero = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center text-center md:mt-28 mt-24 md:gap-10 gap-5">
-        
-        <div className="md:w-[1074px] w-[364px]">
-          <h1 className="md:text-[58px] text-[32px] font-extrabold text-left md:text-center">
+      <div className="flex flex-col justify-center items-center text-center md:mt-28  mt-24 lg:gap-10 gap-5">
+        <div className="lg:w-[1074px] md:w-[900px] w-[364px]">
+          <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
             All-in-One Platform for Academic Automation and Resolution.
           </h1>
         </div>
-        <div className="md:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[901px] p-3">
-          <p className="text-left md:text-center">
+        <div className="lg:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[800px] lg:w-[901px] p-3">
+          <p className="text-left md:text-center lg:text-center">
             Seamlessly managing academic tasks, student records, and
             communication channels, APAAR empowers schools to focus on what
             truly matters - education.
@@ -33,13 +32,13 @@ export const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
-              className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  md:py-4 md:px-6 gap-2 text-white md:text-[24px] text-[16px] hover:bg-black font-bold"
+              className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  lg:py-4 lg:px-6 gap-2 text-white lg:text-[24px] text-[16px] hover:bg-black font-bold"
             >
               Get started. It’s for
-              <span className="md:text-[26px] text-[16px] text-orange-300 font-bold">
+              <span className="lg:text-[26px] text-[16px] text-orange-300 font-bold">
                 FREE
               </span>
-              <div className="rounded-[50px] bg-white md:w-[27px] md:h-[27px] sm:w-[16.596px] sm:h-[16.596px] text-center justify-center flex">
+              <div className="rounded-[50px] bg-white md:w-[27px] md:h-[27px]  text-center justify-center flex">
                 <Image src={rightline} alt="right" />
                 
               </div>
@@ -57,7 +56,7 @@ export const Hero = () => {
             stiffness: 260,
             damping: 20,
           }}
-          className="w-[346px] h-[236.13px] md:w-[791.282px] md:h-[540.016px] "
+          className="w-[346px] h-[236.13px] md:w-[700px] md:h-[530px] lg:w-[791.282px] lg:h-[540.016px] "
         >
           <Image src={dashboard} alt="dashboard" />
         </motion.div>

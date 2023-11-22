@@ -7,8 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 
 export const Testimony = () => (
-  <div className="flex flex-col justify-center items-center text-center md:mt-40 mt-20 gap-10">
-    <div className=" md:text-[52px] font-extrabold text-[32px]">
+  <div className="max-w-screen-2xl flex flex-col justify-center items-center text-center lg:mt-40 mt-20 gap-10">
+    <div className=" lg:text-[52px] font-extrabold text-[32px] ">
       What they Say’s ?
     </div>
     <Swiper
