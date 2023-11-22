@@ -14,11 +14,13 @@ export default function page() {
             className="hidden lg:block w-[330px] h-[390px] ml-12"
           />
           <div className="w-[314px] h-[90px] lg:flex lg:justify-center lg:items-left lg:ml-16 lg:pt-12 lg:pl-0 pl-7 pt-6">
-            <h1 className="lg:text-[24px] text-[16px] font-semibold text-[#FFF]">All-in-One Platform for Academic Automation and Resolution.</h1>
+            <h1 className="lg:text-[24px] text-[16px] font-semibold text-[#FFF]">
+              All-in-One Platform for Academic Automation and Resolution.
+            </h1>
           </div>
         </div>
-        <div className="lg:p-[60px] p-[24px] flex justify-center items-center  lg:w-[600px]">
-          <form class="">
+        <div className="p-[24px] flex flex-col justify-between items-center lg:w-[600px] lg:p-[60px] ">
+          <form class="flex flex-col">
             <div className="">
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
@@ -35,7 +37,9 @@ export default function page() {
                 <input
                   class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded-[11px] py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="grid-first-name"
-                  type="text"YOUR NAME
+                  type="text"
+                  YOUR
+                  NAME
                   placeholder="Enter  Your Name"
                 />
               </div>
@@ -100,12 +104,12 @@ export default function page() {
                 />
               </div>
             </div>
-            <div className="mt-10">
-              <Button className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black">
-                Submit
-              </Button>
-            </div>
           </form>
+          <div className="mt-5">
+            <Button className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black">
+              Submit
+            </Button>
+          </div>
         </div>
       </div>
     </div>
