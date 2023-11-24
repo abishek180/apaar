@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import user from "../Images/User.png";
-import leftarrow from "../Images/ArrowLeft.svg";
-import rightarrow from "../Images/ArrowRight.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 
@@ -172,16 +170,5 @@ export const Testimony = () => (
         </div>
       </SwiperSlide>
     </Swiper>
-    {/* <div className="flex gap-10 mt-5">
-      <button className="bg-[#F8F8F8] rounded-[150px] md:p-4 p-[11.667px] flex justify-center items-center">
-        <Image
-          src={leftarrow}
-          alt="leftarrow"
-        />
-      </button>
-      <button className="bg-[#2C2C2C] rounded-[150px] md:p-4 p-[11.667px] flex justify-center items-center">
-        <Image src={rightarrow} alt="rightarrow" />
-      </button>
-    </div> */}
   </div>
 );

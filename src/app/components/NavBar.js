@@ -86,7 +86,7 @@ export const NavBar = () => {
         </div>
 
         <div>
-          <ul className="md:flex md:flex-col md:gap-20 md:text-[24px]">
+          <ul className="text-[22px] flex flex-col gap-5 md:flex md:flex-col md:gap-20 md:text-[24px]">
             <li className="my-6 md:my-0">
               <a
                 href="#"

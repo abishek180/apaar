@@ -75,6 +75,7 @@ export default function page() {
     <div className="lg:flex lg:justify-center lg:items-center h-screen">
       <div className="flex flex-col lg:flex lg:flex-row lg:justify-center lg:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] lg:w-[900px] lg:h-[742px] md:h-screen md:w-screen w-screen h-screen rounded-[30px] bg-[#FFF]">
         <div className="w-screen h-[90px] lg:w-[394px]  md:w-screen  lg:h-[742px] bg-[#2C2C2C] lg:flex lg:flex-col lg:justify-center  lg:items-center lg:rounded-l-[30px]">
+          
           <Image
             src={sidedashboard}
             alt="dashboard"

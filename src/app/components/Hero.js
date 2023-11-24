@@ -16,12 +16,12 @@ export const Hero = () => {
       <div className="flex flex-col justify-center items-center text-center md:mt-28  mt-24 lg:gap-10 gap-5">
         <div className="lg:w-[1074px] md:w-[900px] w-[364px]">
           <Head>
-            <title>
-              <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
-                All-in-One Platform for Academic Automation and Resolution.
-              </h1>
-            </title>
+            <title>Apaar</title>
+            <meta property="og:title" content="Apaar" key="title" />
           </Head>
+          <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
+            All-in-One Platform for Academic Automation and Resolution.
+          </h1>
         </div>
         <div className="lg:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[800px] lg:w-[901px] p-3">
           <p className="text-left md:text-center lg:text-center">
@@ -50,16 +50,7 @@ export const Hero = () => {
         <div>
           <Image src={google22} alt="google" />
         </div>
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ rotate: 360, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
-          className="w-[346px] h-[236.13px] md:w-[700px] md:h-[530px] lg:w-[791.282px] lg:h-[540.016px] "
-        >
+        <motion.div className="w-[346px] h-[236.13px] md:w-[700px] md:h-[530px] lg:w-[791.282px] lg:h-[540.016px] ">
           <Image src={dashboard} alt="dashboard" />
         </motion.div>
       </div>
