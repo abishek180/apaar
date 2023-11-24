@@ -3,10 +3,16 @@ import React from "react";
 import Image from "next/image";
 import sidedashboard from "../../Images/sidedashboard.png";
 import { Button } from "reactstrap";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
+
 export default function page() {
   return (
     <div className="lg:flex lg:justify-center lg:items-center h-screen">
-      <div className="flex flex-col lg:flex lg:flex-row lg:justify-center lg:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] lg:w-[900px] lg:h-[742px] md:h-screen md:w-screen w-screen h-screen rounded-[30px] bg-gray-300">
+      <div className="flex flex-col lg:flex lg:flex-row lg:justify-center lg:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] lg:w-[900px] lg:h-[742px] md:h-screen md:w-screen w-screen h-screen rounded-[30px] bg-[#FFF]">
         <div className="w-screen h-[90px] lg:w-[394px]  md:w-screen  lg:h-[742px] bg-[#2C2C2C] lg:flex lg:flex-col lg:justify-center  lg:items-center lg:rounded-l-[30px]">
           <Image
             src={sidedashboard}
@@ -50,11 +56,24 @@ export default function page() {
                 >
                   Select your organization type
                 </label>
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[11px] py-3 px-4 leading-tight"
-                  id="grid-last-name"
-                  type="radio"
-                />
+                <FormControl>
+                  <RadioGroup
+                    row
+                    aria-labelledby="demo-row-radio-buttons-group-label"
+                    name="row-radio-buttons-group"
+                  >
+                    <FormControlLabel
+                      value="Independent school"
+                      control={<Radio />}
+                      label="Independent school"
+                      className="text-[#7E92A2] text-[14px] font"/>
+                    <FormControlLabel
+                      value="Group school"
+                      control={<Radio />}
+                      label="Group school"
+                     className="text-[#7E92A2] text-[14px] font"/>
+                  </RadioGroup>
+                </FormControl>
               </div>
             </div>
             <div class=" mb-6">
