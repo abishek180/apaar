@@ -9,7 +9,7 @@ export const Features = () => {
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-center md:gap-10 gap-5 md:mt-20 mt-10">
-        <div className="lg:w-[936px] md:w-[750px] w-[385px] p-1">
+        <div className="lg:w-[900px] md:w-[750px] w-[385px] p-1">
           <h1 className="lg:text-[52px] md:text-[42px] text-[32px] font-extrabold leading-normal">
             Transforming Education One Feature at a Time
           </h1>
@@ -21,7 +21,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="lg:flex lg:flex-row lg:justify-evenly lg:mt-10 lg:p-6 flex flex-col justify-center items-center mt-10">
+      <div className="lg:flex lg:flex-row lg:justify-around lg:mt-10 lg:p-6  flex flex-col justify-center items-center mt-10">
         <div className="md:w-[608px] md:h-[635px] w-[383px] h-[403px] rounded-3xl [background:linear-gradient(180deg,_#fff,_#ebf4ff)]  border-[1px] border-solid border-gainsboro-200 p-5">
           <div className="md:w-[70px] md:h-[70px] w-[44.441px] h-[44.441px] rounded-[16px] flex justify-center items-center px-3 py-3 [background:linear-gradient(180deg,_#CFDDDB_0%,_#C0DAD6_100%)]">
             <Image className="md:w-[47px] md:h-[47px] w-[29.839px] h-[29.839px]" src={exampaper} alt="exampaper"/>

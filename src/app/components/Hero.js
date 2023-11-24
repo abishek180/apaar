@@ -1,5 +1,5 @@
 "use client";
-import React from "react";;
+import React from "react";
 import google22 from "../Images/google.png";
 import dashboard from "../Images/apaar-app-screen.png";
 // import bgHero from "../Images/background.svg";
@@ -8,17 +8,20 @@ import rightline from "../Images/right-outline.svg";
 import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import Head from "next/head";
 
 export const Hero = () => {
-
   return (
     <div>
       <div className="flex flex-col justify-center items-center text-center md:mt-28  mt-24 lg:gap-10 gap-5">
         <div className="lg:w-[1074px] md:w-[900px] w-[364px]">
-          <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
-            All-in-One Platform for Academic Automation and Resolution.
-          </h1>
+          <Head>
+            <title>
+              <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
+                All-in-One Platform for Academic Automation and Resolution.
+              </h1>
+            </title>
+          </Head>
         </div>
         <div className="lg:text-[20px] text-[16px] leading-normal font-medium text-darkslategray-300 w-[386px] md:w-[800px] lg:w-[901px] p-3">
           <p className="text-left md:text-center lg:text-center">
@@ -40,7 +43,6 @@ export const Hero = () => {
               </span>
               <div className="rounded-[50px] bg-white md:w-[27px] md:h-[27px]  text-center justify-center flex">
                 <Image src={rightline} alt="right" />
-                
               </div>
             </motion.button>
           </Link>
