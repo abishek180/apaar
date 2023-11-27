@@ -98,7 +98,7 @@ export default function page() {
           </div>
         </div>
         <div className="p-[24px] flex flex-col justify-between items-center lg:w-[600px] lg:p-[60px] ">
-          <form class="flex flex-col" action={"submit"} onSubmit={handleSubmit}>
+          <form class="flex flex-col" action={"submit"} onSubmit={handleSubmit} onChange={validateForm}>
             <div className="">
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
