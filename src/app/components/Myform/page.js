@@ -11,7 +11,7 @@ import FormLabel from "@mui/material/FormLabel";
 import emailjs from "@emailjs/browser";
 
 
-export default function page() {
+export default function Page() {
   const [name, setName] = useState("");
   const [radio, setRadio] = useState("");
   const [number, setNumber] = useState("");
@@ -226,54 +226,6 @@ export default function page() {
 }
 
 const styles = {
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
-    backgroundColor: "#f0f0f0",
-  },
-  heading: {
-    fontWeight: "bold",
-    fontSize: "25px",
-    color: "green",
-    textAlign: "center",
-  },
-  subHeading: {
-    fontWeight: "bold",
-    fontSize: "25px",
-    textAlign: "center",
-  },
-  form: {
-    backgroundColor: "#fff",
-    padding: "20px",
-    borderRadius: "8px",
-    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-    width: "100%",
-    maxWidth: "400px",
-    margin: "0 auto",
-  },
-  input: {
-    width: "100%",
-    padding: "12px",
-    marginBottom: "12px",
-    border: "1px solid #ccc",
-    borderRadius: "10px",
-    fontSize: "16px",
-    transition: "border-color 0.2s ease",
-  },
-  // button: {
-  //     backgroundColor: 'green',
-  //     color: '#fff',
-  //     fontWeight: 'bold',
-  //     fontSize: '16px',
-  //     padding: '12px',
-  //     border: 'none',
-  //     borderRadius: '10px',
-  //     cursor: 'pointer',
-  //     width: '40%',
-  //     transition: 'opacity 0.2s ease',
-  // },
   error: {
     color: "red",
     fontSize: "14px",
