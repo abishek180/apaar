@@ -4,6 +4,7 @@ import down from "../Images/down.svg";
 import menu from "../Images/menu.svg";
 import close from "../Images/close.svg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,23 +54,28 @@ export const NavBar = () => {
                   About Us
                 </a>
               </li>
-              <li className="my-6 md:my-0">
-                <a
-                  href="#"
-                  className="leading-[28px] font-medium hover:text-[grey]"
-                >
-                  Contact Us
-                </a>
-              </li>
+              <Link href="/components/Myform">
+                <li className="my-6 md:my-0">
+                  <a
+                    href="#"
+                    className="leading-[28px] font-medium hover:text-[grey]"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
         <div className="md:p-4 p-0">
-          <motion.button
-           whileHover={{scale:1.1}}
-           className="lg:block hidden lg:rounded-[8px] lg:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold">
-            Get Started
-          </motion.button>
+          <Link href="/components/Myform">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="lg:block hidden lg:rounded-[8px] lg:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold"
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </div>
       </div>
       <div

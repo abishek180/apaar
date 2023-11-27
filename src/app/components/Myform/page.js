@@ -9,6 +9,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import emailjs from "@emailjs/browser";
+import close from "/src/app/Images/close.svg"
+import Link from "next/link";
 
 
 export default function Page() {
@@ -98,10 +100,11 @@ export default function Page() {
         </div>
         <div className="p-[24px] flex flex-col justify-between items-center lg:w-[600px] lg:p-[60px] ">
           <form class="flex flex-col" action={"submit"} onSubmit={handleSubmit} onChange={validateForm}>
-            <div className="">
+            <div className="flex ">
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
               </p>
+              <Link href="/"><Image src={close} className="cursor-pointer w-[100px]"/></Link>
             </div>
             <div class="mb-6 mt-10">
               <div class="w-full  mb-6 md:mb-0">
