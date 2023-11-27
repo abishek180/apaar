@@ -8,6 +8,7 @@ import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 export const Hero = () => {
   return (
     <div>
@@ -44,9 +45,9 @@ export const Hero = () => {
         <div>
           <Image src={google22} alt="google" />
         </div>
-        <motion.div className="w-[346px] h-[236.13px] md:w-[700px] md:h-[530px] lg:w-[791.282px] lg:h-[540.016px] ">
+        <div className="w-[346px] h-[236.13px] md:w-[700px] md:h-[530px] lg:w-[791.282px] lg:h-[540.016px] ">
           <Image src={dashboard} alt="dashboard" />
-        </motion.div>
+        </div>
       </div>
     </div>
   );
