@@ -18,20 +18,20 @@ export const Footer = () => {
           </div>
         </div>
         <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] md:mt-0 mt-10">
-          <div className="font-medium text-[11.54px]">Home</div>
-          <div className=" font-medium text-[11.54px]">Features</div>
-          <div className="font-medium text-[11.54px]">About Us</div>
-          <div className=" font-medium text-[11.54px]">Contact Us</div>
-          <div className=" font-medium text-[11.54px]">Testimonials</div>
-          <div className=" font-medium text-[11.54px]">Blog</div>
+          <div className="font-medium text-[16px]">Home</div>
+          <div className=" font-medium text-[16px]">Features</div>
+          <div className="font-medium text-[16px]">About Us</div>
+          <div className=" font-medium text-[16px]">Contact Us</div>
+          <div className=" font-medium text-[16px]">Testimonials</div>
+          <div className=" font-medium text-[16px]">Blog</div>
         </div>
         <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] md:mt-0 mt-10">
-          <div className=" font-medium text-[11.54px]">Support</div>
-          <div className="font-medium text-[11.54px]">FAQ</div>
-          <div className="font-medium text-[11.54px]">Privacy Policy</div>
-          <div className=" font-medium text-[11.54px]">Terms of Services</div>
-          <div className=" font-medium text-[11.54px]">Log In</div>
-          <div className=" font-medium text-[11.54px]">Request a Demo</div>
+          <div className=" font-medium text-[16px]">Support</div>
+          <div className="font-medium text-[16px]">FAQ</div>
+          <div className="font-medium text-[16px]">Privacy Policy</div>
+          <div className=" font-medium text-[16px]">Terms of Services</div>
+          <div className=" font-medium text-[16px]">Log In</div>
+          <div className=" font-medium text-[16px]">Request a Demo</div>
         </div>
       </div>
       <hr />
