@@ -3,6 +3,7 @@ import Image from "next/image";
 import user from "../Images/User.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import quote from "../Images/quote.svg"
 
 export const Testimony = () => (
   <div className="max-w-screen-2xl flex flex-col justify-center items-center text-center lg:mt-40 mt-20 mx-auto gap-10">
@@ -74,6 +75,9 @@ export const Testimony = () => (
               supports all seamlessly..”
             </p>
           </div>
+          <div>
+          <Image src={quote} className="mt-12"/>
+          </div>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -97,6 +101,7 @@ export const Testimony = () => (
               makes parents very comfortable”
             </p>
           </div>
+          <Image src={quote}/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -121,6 +126,7 @@ export const Testimony = () => (
               Were excited to continue maximizing Apaar potential.”
             </p>
           </div>
+          <Image src={quote}/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -144,6 +150,7 @@ export const Testimony = () => (
               supports all seamlessly..”
             </p>
           </div>
+          <Image src={quote} className="mt-12"/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -167,6 +174,7 @@ export const Testimony = () => (
               supports all seamlessly..”
             </p>
           </div>
+          <Image src={quote} className="mt-12"/>
         </div>
       </SwiperSlide>
     </Swiper>

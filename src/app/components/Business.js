@@ -5,7 +5,7 @@ export const Business = () => {
     <div>
       <div className=" bg-[#D3DFDE] text-left px-[25px] py-[60px] lg:pt-[100px] lg:pr-[129px] lg:pb-[85px] lg:pl-[103px] lg:mt-40 mt-14">
         <div className="lg:flex lg:flex-row flex flex-col ">
-          <p className="lg:text-[38px] text-[32px] leading-normal font-bold ">
+          <p className="lg:text-[38px] text-[32px] font-bold ">
             Maximize Your Time, Minimize Administrative Burdens with Apaar
           </p>
           <div className=" leading-normal font-semibold  lg:mt-0 mt-4">

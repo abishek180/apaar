@@ -13,7 +13,7 @@ export const USP = () => {
     <div>
       <div className=" flex flex-col justify-center items-center text-center lg:gap-12 gap-6 lg:mt-[150px] mt-14">
         <div className="w-[398px] md:w-[800px] lg:w-[1115px] ">
-          <h1 className="font-extrabold  lg:text-[52px] md:text-[42px] text-[32px] leading-normal">
+          <h1 className="font-extrabold  lg:text-[52px] md:text-[42px] text-[32px]">
             Automate your activity with Apaar school management system
           </h1>
         </div>
