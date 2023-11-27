@@ -22,7 +22,7 @@ export const USP = () => {
         </div>
         <div className=" lg:flex lg:flex-row flex flex-col gap-[20px]">
           <div className="flex flex-row lg:gap-[20px] gap-[42px]">
-            <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px]">
+            <div className="  flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" w-[55.873px] h-[55.873px]"
                 src={attendance}
@@ -30,7 +30,7 @@ export const USP = () => {
               />
               <div className=" font-semibold ">Attendence</div>
             </div>
-            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px]">
+            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" rounded md:w-[57px] md:h-[62px] w-[55.873px] h-[55.873px]"
                 src={assignment}
@@ -40,7 +40,7 @@ export const USP = () => {
             </div>
           </div>
           <div className="flex flex-row lg:gap-[20px] gap-[42px]">
-            <div className="flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] ">
+            <div className="flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" w-[55.873px] h-[55.873px]"
                 src={exam}
@@ -48,7 +48,7 @@ export const USP = () => {
               />
               <div className=" font-semibold ">Exam</div>
             </div>
-            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px]">
+            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" w-[55.873px] h-[55.873px]"
                 src={timetable}
@@ -58,7 +58,7 @@ export const USP = () => {
             </div>
           </div>
           <div className="flex flex-row lg:gap-[20px] gap-[42px]">
-            <div className="flex justify-center items-center flex-col gap-2.5 bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px]">
+            <div className="flex justify-center items-center flex-col gap-2.5 bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" w-[55.873px] h-[55.873px]"
                 src={study}
@@ -66,7 +66,7 @@ export const USP = () => {
               />
               <div className=" font-semibold ">Study Room</div>
             </div>
-            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px]">
+            <div className=" flex justify-center items-center flex-col gap-2.5  bg-[#F8F8F8] lg:w-[172px] lg:h-[161px] w-[145px] h-[135px] hover:bg-gray-200">
               <Image
                 className=" w-[55.873px] h-[55.873px]"
                 src={fee}

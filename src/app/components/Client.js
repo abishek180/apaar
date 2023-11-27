@@ -31,8 +31,8 @@ export const Client = () => {
         </div>
         <div className="flex flex-row justify-around lg:gap-[115.082px]  lg:mt-0 my-4 text-[#858585]">
           <div className="flex ml-4 lg:ml-0 ">
-            <Image src={oxford} alt="oxford" className="lg:w-[72.885px] lg:h-[78px] w-[42.984px] h-[46px]" />
-            <div className="mt-3 ">
+            <Image src={oxford} alt="oxford" className="lg:w-[68px] lg:h-[65px] w-[42.984px] h-[46px]" />
+            <div className="mt-2 ">
               <p className="lg:text-[20.459px] text-[12.066px] font-extrabold">
                 OXFORD SCHOOL
               </p>
@@ -40,8 +40,8 @@ export const Client = () => {
             </div>
           </div>
           <div className="flex">
-            <Image src={oxford} alt="oxford" className="lg:w-[72.885px] lg:h-[78px] w-[42.984px] h-[46px]"/>
-            <div className="mt-3">
+            <Image src={oxford} alt="oxford" className="lg:w-[68px] lg:h-[65px] w-[42.984px] h-[46px]"/>
+            <div className="mt-2">
               <p className=" lg:text-[20.459px] text-[12.066px] font-extrabold">
                 OXFORD SCHOOL
               </p>
