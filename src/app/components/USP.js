@@ -11,13 +11,13 @@ import rightarrow from "../Images/arrow-right-line.svg";
 export const USP = () => {
   return (
     <div>
-      <div className=" flex flex-col justify-center items-center text-center lg:gap-12 gap-6 lg:mt-[150px] mt-14">
+      <div className="flex flex-col justify-center items-center text-center lg:gap-12 gap-6 lg:mt-[150px] mt-14">
         <div className="w-[398px] md:w-[800px] lg:w-[1115px] ">
           <h1 className="font-extrabold  lg:text-[52px] md:text-[42px] text-[32px]">
             Automate your activity with Apaar school management system
           </h1>
         </div>
-        <div className=" text-darkslategray-300  lg:text-[20px] text-[16px]">
+        <div className="text-darkslategray-300 lg:text-[20px] text-[16px]">
           <p>Assemble your team to tailor your experience</p>
         </div>
         <div className=" lg:flex lg:flex-row flex flex-col gap-[20px]">
