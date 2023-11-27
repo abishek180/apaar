@@ -9,124 +9,83 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 // import sendgrid from "@sendgrid/mail";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 // sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default function page() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [radio, setRadio] = useState("");
   const [number, setNumber] = useState("");
   const [school, setSchool] = useState("");
-  // const [errors, setErrors] = useState({});
-  // const [isFormValid, setIsFormValid] = useState(false);
+  const [role, setRole] = useState("");
+  const [errors, setErrors] = useState({});
+  const [isFormValid, setIsFormValid] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-
-    emailjs.sendForm('service_bqhvp46', 'template_e7wa7ls', {
-      from_name: "email",
-      to_name: "name",
-      message: "number",
-      reply_to: "school",
-        }, 'YiWjc51kBx6bNi6hn')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-    // let isValidForm = handleValidation();
-    // try {
-    //   // console.log("REQ.BODY", req.body);
-    //   await sendgrid.send({
-    //     to: "sravansp92@gmail.com", // Your email where you'll receive emails
-    //     from: "sravan@docme.cloud", // your website email address here
-    //     subject: "subject",
-    //     html: `<div>You've got a mail</div>`,
-    //   });
-    // } catch (error) {
-    //   // console.log(error);
-    //   return res.status(error.statusCode || 500).json({ error: error.message });
-    // }
-  
-    // return res.status(200).json({ error: "" });
-
-    // const res = await fetch("/api/sendgrid", {
-    //   body: JSON.stringify({
-    //     email: email,
-    //     name: name,
-    //     number: number,
-    //     school: school,
-    //   }),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   method: "POST",
-    // });
-
-    // const { error } = await res.json();
-    // if (error) {
-    //   console.log(error);
-    //   return;
-    // }
-    console.log(name, email, number, school);
+    console.log(e);
+;
+    emailjs
+      .send(
+        "service_bqhvp46",
+        "template_e7wa7ls",
+        {
+          to_name: name,
+          option: radio,
+          school: school,
+          number:number,
+          role:role,
+        },
+        "kFZTDWpSoa3dQ7HQ9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
-  // useEffect(() => {
-  //     validateForm();
-  // }, [name, email, school, number]);
-  // // Validate form
-  // const validateForm = () => {
-  //     let errors = {};
+  useEffect(() => {
+      validateForm();
+  }, [name,school,number,radio]);
+  // Validate form
+  const validateForm = () => {
+      let errors = {};
 
-  //     if (!name) {
-  //         errors.name = 'Name is required.';
-  //     } else if (!/\S+@\S+\.\S+/) {
-  //       errors.email = 'Name is invalid.';
-  //   }
+      if (!name) {
+          errors.name = 'Name is required.';
+      } else if ("") {
+        errors.email = 'Name is invalid.';
+    }
 
-  //     if (!email) {
-  //         errors.email = 'required.';
-  //     }
+      if (!school) {
+        errors.school = 'required.';
+    } else if ("") {
+      errors.school = 'Name is invalid.';
+  }
 
-  //     if (!school) {
-  //       errors.school = 'required.';
-  //   } else if (!/\S+@\S+\.\S+/) {
-  //     errors.school = 'Name is invalid.';
-  // }
+      if (!number) {
+          errors.number = 'Number is required.';
+      } else if (number.length < 10) {
+          errors.number = 'number must be 10 digits.';
+      }if (!number) {
+          errors.number = 'Number is required.';
+        } else if (/[^0-9]/.test(number)){
+        errors.number = 'Enter valid digits';
+     }
 
-  //     if (!number) {
-  //         errors.number = 'Number is required.';
-  //     } else if (number.length < 10) {
-  //         errors.number = 'number must be 10 digits.';
-  //     }if (!number) {
-  //         errors.number = 'Number is required.';
-  //       } else if (/[^0-9]/.test(number)){
-  //       errors.number = 'Enter valid digits';
-  //    }
-
-  //     setErrors(errors);
-  //     setIsFormValid(Object.keys(errors).length === 0);
-  // };
-
-  // async function handleSubmit(e){
-  //   e.preventDefault();
-  //   const formData ={};
-
-  //   Array.from(e.currentTarget.elements).forEach(field =>{
-  //     if(!field.name) return;
-  //     formData[field.name] = field.values;
-  //   });
-
-  //   console.log(formData);
-  // }
+      setErrors(errors);
+      setIsFormValid(Object.keys(errors).length === 0);
+  };
 
   return (
     <div className="h-screen lg:flex lg:justify-center lg:items-center">
       <div className="flex flex-col lg:flex lg:flex-row lg:justify-center lg:items-center shadow-[-4px_0px_41px_0px_rgba(8,_10,_9,_0.11)] lg:w-[900px] lg:h-[742px] md:h-screen md:w-screen w-screen h-screen rounded-[30px] bg-[#FFF]">
         <div className="w-screen h-[90px] lg:w-[394px]  md:w-screen  lg:h-[742px] bg-[#2C2C2C] lg:flex lg:flex-col lg:justify-center  lg:items-center lg:rounded-l-[30px]">
-          
           <Image
             src={sidedashboard}
             alt="dashboard"
@@ -139,7 +98,7 @@ export default function page() {
           </div>
         </div>
         <div className="p-[24px] flex flex-col justify-between items-center lg:w-[600px] lg:p-[60px] ">
-          <form class="flex flex-col" onSubmit={handleSubmit}>
+          <form class="flex flex-col" action={"submit"} onSubmit={handleSubmit}>
             <div className="">
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
@@ -152,9 +111,6 @@ export default function page() {
                   for="grid-first-name"
                 >
                   {" "}
-                  {/* {errors.password && (
-                    <p style={styles.error}>{errors.password}</p>
-                  )} */}
                   Your Name
                 </label>
                 <input
@@ -168,7 +124,7 @@ export default function page() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-                {/* {errors.name && <p style={styles.error}>{errors.name}</p>} */}
+                {errors.name && <p style={styles.error}>{errors.name}</p>}
               </div>
               <div class="w-full">
                 <label
@@ -188,14 +144,14 @@ export default function page() {
                       control={<Radio />}
                       label="Independent school"
                       className="text-[#7E92A2] text-[14px] font"
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => setRadio(e.target.value)}
                     />
                     <FormControlLabel
                       value="Group school"
                       control={<Radio />}
                       label="Group school"
                       className="text-[#7E92A2] text-[14px] font"
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => setRadio(e.target.value)}
                     />
                   </RadioGroup>
                   {/* {errors.email && <p style={styles.error}>{errors.email}</p>} */}
@@ -217,7 +173,7 @@ export default function page() {
                   placeholder="eg: NIMS School Dubai"
                   onChange={(e) => setSchool(e.target.value)}
                 />
-                {/* {errors.school && <p style={styles.error}>{errors.school}</p>} */}
+                {errors.school && <p style={styles.error}>{errors.school}</p>}
               </div>
             </div>
             <div class="flex gap-3 mb-2">
@@ -235,7 +191,7 @@ export default function page() {
                   onChange={(e) => setNumber(e.target.value)}
                   type="telephone"
                 />
-                {/* {errors.number && <p style={styles.error}>{errors.number}</p>} */}
+                {errors.number && <p style={styles.error}>{errors.number}</p>}
               </div>
 
               <div class="w-full md:w-1/2  mb-6 md:mb-0">
@@ -250,6 +206,7 @@ export default function page() {
                   id="grid-role"
                   type="text"
                   placeholder="-Select Your Role-"
+                  onChange={(e) => setRole(e.target.value)}
                 />
               </div>
             </div>
@@ -257,7 +214,7 @@ export default function page() {
             <div className="mt-5">
               <Button
                 className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black"
-                type="submit"
+                type="submit" 
               >
                 Submit
               </Button>
