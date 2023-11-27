@@ -8,10 +8,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-// import sendgrid from "@sendgrid/mail";
 import emailjs from "@emailjs/browser";
-
-// sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default function page() {
   const [name, setName] = useState("");
