@@ -65,7 +65,7 @@ export const NavBar = () => {
         <div className="md:p-4 p-0">
           <Link href="/components/Myform">
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.03 }}
               className="lg:block hidden lg:rounded-[8px] lg:bg-[#090909]  md:items-center md:justify-center md:py-3.5 md:px-8 md:text-neutral-white font-plus-jakarta-sans text-white hover:bg-gray-800 sm:hidden font-bold"
             >
               Get Started

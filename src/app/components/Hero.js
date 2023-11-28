@@ -28,8 +28,7 @@ export const Hero = () => {
         <div>
           <Link href="/components/Myform">
             <motion.button
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.03 }}
               className="flex rounded-lg bg-[#2C2C2C] shadow-[0px_20px_40px_rgba(0,_0,_0,_0.13)]  items-center justify-center p-4  lg:py-4 lg:px-6 gap-2 text-white lg:text-[24px] text-[16px] hover:bg-black font-bold"
             >
               Get started. It’s for
