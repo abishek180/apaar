@@ -6,7 +6,7 @@ import layer from "../Images/ace.png";
 
 export const Client = () => {
   return (
-    <div>
+    <div className="max-w-screen-lg mx-auto">
       <div className=" md:text-[24px] text-[12px] leading-normal  lg:mt-[150px] mt-16 flex justify-center gap-1">
         <span className="text-gray-700 font-normal">Our Trusted</span><span className="font-bold  text-[#000]">Users</span>
       </div>

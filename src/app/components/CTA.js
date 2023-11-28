@@ -7,7 +7,7 @@ import Link from "next/link";
 export const CTA = () => {
   return (
     <div className="px-0 md:px-24 ">
-      <div className="relative rounded-lg bg-gray-200 flex flex-col justify-center items-center text-center mt-5 md:mt-32 gap-6 py-24 overflow-hidden">
+      <div className="max-w-screen-lg mx-auto relative rounded-lg bg-gray-200 flex flex-col justify-center items-center text-center mt-5 md:mt-32 gap-6 py-24 overflow-hidden">
         <Image
           src={cta}
           className="absolute w-full h-full object-cover transform transition duration-1000 transition-timing-ease-in-out hover:scale-125"

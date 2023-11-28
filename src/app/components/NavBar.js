@@ -13,7 +13,7 @@ export const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="bg-white fixed top-0 w-full z-10">
+    <div className=" bg-white fixed top-0 w-full z-10">
       <div className="lg:flex lg:justify-around lg:gap-[180px] lg:mt-3">
         <div className="lg:flex lg:flex-row lg:gap-12">
           <div className="lg:p-0 flex justify-between md:items-center">

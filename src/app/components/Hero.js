@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <div>
+    <div className="max-w-screen-lg mx-auto">
       <div className="flex flex-col justify-center items-center text-center md:mt-28  mt-24 lg:gap-10 gap-5">
         <div className="lg:w-[1074px] md:w-[900px] w-[364px]">
           <h1 className="lg:text-[58px] md:text-[42px] text-[32px] font-extrabold text-left md:text-center">
