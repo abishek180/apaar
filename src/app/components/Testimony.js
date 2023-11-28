@@ -4,6 +4,7 @@ import user from "../Images/User.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import quote from "../Images/quote.svg"
+import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const Testimony = () => (
   <div className="max-w-screen-2xl flex flex-col justify-center items-center text-center lg:mt-40 mt-20 mx-auto gap-10">
@@ -76,7 +77,7 @@ export const Testimony = () => (
             </p>
           </div>
           <div>
-          <Image src={quote} className="mt-12"/>
+          <RiDoubleQuotesL className="mt-12 text-[80px] text-[#DEE4EA]"/>
           </div>
         </div>
       </SwiperSlide>
@@ -101,7 +102,7 @@ export const Testimony = () => (
               makes parents very comfortable”
             </p>
           </div>
-          <Image src={quote}/>
+          <RiDoubleQuotesL className="text-[80px] text-[#FFF0D4]"/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -126,7 +127,7 @@ export const Testimony = () => (
               Were excited to continue maximizing Apaar potential.”
             </p>
           </div>
-          <Image src={quote}/>
+          <RiDoubleQuotesL className="text-[80px] text-[#BAE7BE]"/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -150,7 +151,7 @@ export const Testimony = () => (
               supports all seamlessly..”
             </p>
           </div>
-          <Image src={quote} className="mt-12"/>
+          <RiDoubleQuotesL className="mt-12 text-[80px] text-[#D3CCE2]"/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
@@ -174,7 +175,7 @@ export const Testimony = () => (
               supports all seamlessly..”
             </p>
           </div>
-          <Image src={quote} className="mt-12"/>
+          <RiDoubleQuotesL className="mt-12 text-[80px] text-[#D3CCE2]"/>
         </div>
       </SwiperSlide>
     </Swiper>

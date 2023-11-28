@@ -2,11 +2,16 @@ import React from "react";
 import cta from "../Images/bg-cta.png";
 import Image from "next/image";
 import Link from "next/link";
+
+
 export const CTA = () => {
   return (
     <div className="px-0 md:px-24 ">
-      <div className="relative rounded-lg bg-gray-100 flex flex-col justify-center items-center text-center mt-5 md:mt-32 gap-6 py-24 ">
-        <Image src={cta} className="absolute w-full h-full object-cover" />
+      <div className="relative rounded-lg bg-gray-200 flex flex-col justify-center items-center text-center mt-5 md:mt-32 gap-6 py-24 ">
+        <Image
+          src={cta}
+          className="absolute w-full h-full object-cover transform transition duration-1000 transition-timing-ease-in-out hover:scale-125"
+        />
         <p className=" md:text-[38px] text-[24px] text-black font-bold">
           Elevate your scheduling
         </p>
