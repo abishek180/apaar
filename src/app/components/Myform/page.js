@@ -124,7 +124,7 @@ export default function Page() {
                   NAME
                   placeholder="Enter Your Name"
                   style={styles.input}
-                  value={formik.errors.name}
+                  value={formik.values.name}
                   onChange={(e) => {
                     console.log(e.target.value);
                     formik.setFieldValue("name", e.target.value);
@@ -187,7 +187,7 @@ export default function Page() {
                   id="grid-school"
                   type="text"
                   placeholder="eg: NIMS School Dubai"
-                  value={formik.errors.school}
+                  value={formik.values.school}
                   onChange={(e) => {
                     console.log(e.target.value);
                     formik.setFieldValue("school", e.target.value);
@@ -234,7 +234,7 @@ export default function Page() {
                   id="grid-role"
                   type="text"
                   placeholder="-Select Your Role-"
-                  value={formik.errors.role}
+                  value={formik.values.role}
                   onChange={(e) => {
                     console.log(e.target.value);
                     formik.setFieldValue("role", e.target.value);
