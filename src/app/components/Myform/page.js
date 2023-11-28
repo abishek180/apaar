@@ -9,79 +9,71 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import emailjs from "@emailjs/browser";
-import close from "/src/app/Images/close.svg"
+import close from "/src/app/Images/close.svg";
 import Link from "next/link";
-
+import { useFormik } from "formik";
+import * as yup from "yup";
 
 export default function Page() {
-  const [name, setName] = useState("");
-  const [radio, setRadio] = useState("");
-  const [number, setNumber] = useState("");
-  const [school, setSchool] = useState("");
-  const [role, setRole] = useState("");
-  const [errors, setErrors] = useState({});
-  const [isFormValid, setIsFormValid] = useState(false);
-  
+  // const [name, setName] = useState("");
+  // const [radio, setRadio] = useState("");
+  // const [number, setNumber] = useState("");
+  // const [school, setSchool] = useState("");
+  // const [role, setRole] = useState("");
+  // const [errors, setErrors] = useState({});
+  // const [isFormValid, setIsFormValid] = useState(false);
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e);
-;
-    emailjs
-      .send(
-        "service_bqhvp46",
-        "template_e7wa7ls",
-        {
-          to_name: name,
-          option: radio,
-          school: school,
-          number:number,
-          role:role,
-        },
-        "kFZTDWpSoa3dQ7HQ9"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      radio: "",
+      school: "",
+      number: "",
+      role: "",
+    },
 
-  useEffect(() => {
-      validateForm();
-  }, [name,school,number,radio]);
-  // Validate form
-  const validateForm = () => {
-      let errors = {};
+    enableReinitialize: true,
 
-      if (!name) {
-          errors.name = 'Name is required.';
-      } else if ("") {
-        errors.email = 'Name is invalid.';
-    }
+    validateOnChange: false,
 
-      if (!school) {
-        errors.school = 'required.';
-    } else if ("") {
-      errors.school = 'Name is invalid.';
-  }
+    validationSchema: yup.object().shape({
+      name: yup.string().required("Required"),
+      radio: yup.string().required("Required"),
+      school: yup.string().required("Required"),
+      number: yup.number().required("Must be 10 digits"),
+      role: yup.string().required("Required"),
+    }),
 
-      if (!number) {
-          errors.number = 'Number is required.';
-      } else if (number.length < 10) {
-          errors.number = 'number must be 10 digits.';
-      }if (!number) {
-          errors.number = 'Number is required.';
-        } else if (/[^0-9]/.test(number)){
-        errors.number = 'Enter valid digits';
-     }
+    onSubmit: async (e) => {
+      console.log(e);
 
-      setErrors(errors);
-      setIsFormValid(Object.keys(errors).length === 0);
-  };
+      emailjs
+        .send(
+          "service_bqhvp46",
+          "template_e7wa7ls",
+          {
+            to_name: e.name,
+            option: e.radioradio,
+            school: e.school,
+            number: e.number,
+            role: e.role,
+          },
+          "kFZTDWpSoa3dQ7HQ9"
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              setMessage("successfully submitted");
+            }
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    },
+  });
 
   return (
     <div className="h-screen lg:flex lg:justify-center lg:items-center">
@@ -99,12 +91,18 @@ export default function Page() {
           </div>
         </div>
         <div className="p-[24px] flex flex-col justify-between items-center lg:w-[600px] lg:p-[60px] ">
-          <form class="flex flex-col" action={"submit"} onSubmit={handleSubmit} onChange={validateForm}>
+          <form
+            class="flex flex-col"
+            action={"submit"}
+            onSubmit={formik.handleSubmit}
+          >
             <div className="flex ">
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
               </p>
-              <Link href="/"><Image src={close} className="cursor-pointer w-[100px]"/></Link>
+              <Link href="/">
+                <Image src={close} className="cursor-pointer w-[100px]" />
+              </Link>
             </div>
             <div class="mb-6 mt-10">
               <div class="w-full  mb-6 md:mb-0">
@@ -121,12 +119,17 @@ export default function Page() {
                   type="text"
                   YOUR
                   NAME
-                  placeholder="Enter  Your Name"
+                  placeholder="Enter Your Name"
                   style={styles.input}
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={formik.errors.name}
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                    formik.setFieldValue("name", e.target.value);
+                  }}
                 />
-                {errors.name && <p style={styles.error}>{errors.name}</p>}
+                {formik.errors.name && (
+                  <p style={styles.error}>{formik.errors.name}</p>
+                )}
               </div>
               <div class="w-full">
                 <label
@@ -142,18 +145,26 @@ export default function Page() {
                     name="row-radio-buttons-group"
                   >
                     <FormControlLabel
-                      value="Independent school"
+                       value="Independent school"
+                       name="a"
                       control={<Radio />}
                       label="Independent school"
                       className="text-[#7E92A2] text-[14px] font"
-                      onChange={(e) => setRadio(e.target.value)}
+                      onChange={(e) => {
+                        console.log(e.target.value);
+                        formik.setFieldValue("radio", e.target.value);
+                      }}
                     />
                     <FormControlLabel
-                      value="Group school"
+                    value="Group school"
+                    name="a"
                       control={<Radio />}
                       label="Group school"
                       className="text-[#7E92A2] text-[14px] font"
-                      onChange={(e) => setRadio(e.target.value)}
+                      onChange={(e) => {
+                        console.log(e.target.value);
+                        formik.setFieldValue("radio", e.target.value);
+                      }}
                     />
                   </RadioGroup>
                   {/* {errors.email && <p style={styles.error}>{errors.email}</p>} */}
@@ -173,9 +184,15 @@ export default function Page() {
                   id="grid-school"
                   type="text"
                   placeholder="eg: NIMS School Dubai"
-                  onChange={(e) => setSchool(e.target.value)}
+                   value={formik.errors.school}
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                    formik.setFieldValue("school",e.target.value)
+                  }}
                 />
-                {errors.school && <p style={styles.error}>{errors.school}</p>}
+                {formik.errors.school && (
+                  <p style={styles.error}>{formik.errors.school}</p>
+                )}
               </div>
             </div>
             <div class="flex gap-3 mb-2">
@@ -190,10 +207,16 @@ export default function Page() {
                   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-[11px] py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-number"
                   placeholder="+971-XX-1234567"
-                  onChange={(e) => setNumber(e.target.value)}
+                  value={formik.values.number}
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                    formik.setFieldValue("number",e.target.value)
+                  }}
                   type="telephone"
                 />
-                {errors.number && <p style={styles.error}>{errors.number}</p>}
+                {formik.errors.number && (
+                  <p style={styles.error}>{formik.errors.number}</p>
+                )}
               </div>
 
               <div class="w-full md:w-1/2  mb-6 md:mb-0">
@@ -208,20 +231,28 @@ export default function Page() {
                   id="grid-role"
                   type="text"
                   placeholder="-Select Your Role-"
-                  onChange={(e) => setRole(e.target.value)}
+                  value={formik.errors.role}
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                    formik.setFieldValue("role",e.target.value)
+                  }}
                 />
+                {formik.errors.role && (
+                  <p style={styles.error}>{formik.errors.role}</p>
+                )}
               </div>
             </div>
 
             <div className="mt-5">
               <Button
                 className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black"
-                type="submit" 
+                type="submit"
               >
                 Submit
               </Button>
             </div>
           </form>
+          <div>{message}</div>
         </div>
       </div>
     </div>
