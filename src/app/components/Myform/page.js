@@ -170,7 +170,9 @@ export default function Page() {
                       }}
                     />
                   </RadioGroup>
-                  {/* {errors.email && <p style={styles.error}>{errors.email}</p>} */}
+                  {formik.errors.radio && (
+                  <p style={styles.error}>{formik.errors.radio}</p>
+                )}
                 </FormControl>
               </div>
             </div>
