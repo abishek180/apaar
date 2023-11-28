@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import nmsdubai from "../Images/nims-1 2.png";
 import oxford from "../Images/oxford-1 1.png";
-import layer from "../Images/ace.png";
+import layer from "../Images/ace college.png";
 
 export const Client = () => {
   return (
@@ -20,16 +20,16 @@ export const Client = () => {
             </div>
           </div>
           <div className="flex">
-            <Image src={layer} alt="ace" className=" lg:w-[98.051px] lg:h-[77.239px] w-[71.189px] h-[48.324px]"/>
-            <div>
+            <Image src={layer} alt="ace" className=" lg:w-[195.051px] lg:h-[77.239px] w-[71.189px] h-[48.324px]"/>
+            {/* <div>
               <p className=" lg:text-[51.995px] text-[32.53px]">ACE</p>
               <p className="lg:text-[8.09px] text-[5.061px] ">
                 College of Engineering
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="flex flex-row justify-around lg:gap-[115.082px]  lg:mt-0 my-4 text-[#858585]">
+        {/* <div className="flex flex-row justify-around lg:gap-[115.082px]  lg:mt-0 my-4 text-[#858585]">
           <div className="flex ml-4 lg:ml-0 ">
             <Image src={oxford} alt="oxford" className="lg:w-[68px] lg:h-[65px] w-[42.984px] h-[46px]" />
             <div className="mt-2 ">
@@ -50,7 +50,7 @@ export const Client = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
