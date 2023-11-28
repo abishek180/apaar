@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="max-w-screen-2xl bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[129px] lg:pb-[12px] lg:pl-[103px]">
-      <div className="flex flex-col md:flex md:flex-row md:justify-between mb-5">
+    <div className=" bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[129px] lg:pb-[12px] lg:pl-[103px]">
+      <div className="max-w-screen-2xl flex flex-col md:flex md:flex-row md:justify-between mb-5">
         <div>
           <div className=" text-[32px] font-black ">APAAR</div>
           <div className=" font-plus-jakarta-sans ">
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="md:mt-5 mt-3 md:flex md:flex-row md:justify-between flex flex-col">
+      <div className="max-w-screen-2xl md:mt-5 mt-3 md:flex md:flex-row md:justify-between flex flex-col">
         <p className="text-[16px] md:flex flex justify-center ">
           <Image
             src={copyright}
