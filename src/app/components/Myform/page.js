@@ -13,6 +13,7 @@ import close from "/src/app/Images/close.svg";
 import Link from "next/link";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import { FaCircleCheck } from "react-icons/fa6";
 
 export default function Page() {
   // const [name, setName] = useState("");
@@ -64,7 +65,7 @@ export default function Page() {
         .then(
           (result) => {
             if (result.status === 200) {
-              setMessage("successfully submitted");
+              setMessage(<div className="flex justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[25px]"/><span className="text-[green]"> successfully submitted</span></div>);
             }
             console.log(result.text);
           },
@@ -100,9 +101,11 @@ export default function Page() {
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
               </p>
-              <Link href="/">
-                <Image src={close} className="cursor-pointer w-[100px]" />
-              </Link>
+              
+                <Link href="/">
+                  <Image src={close} className=" w-[80px] hover:bg-gray-400 rounded-[50%]" />
+                </Link>
+              
             </div>
             <div class="mb-6 mt-10">
               <div class="w-full  mb-6 md:mb-0">
@@ -145,8 +148,8 @@ export default function Page() {
                     name="row-radio-buttons-group"
                   >
                     <FormControlLabel
-                       value="Independent school"
-                       name="a"
+                      value="Independent school"
+                      name="a"
                       control={<Radio />}
                       label="Independent school"
                       className="text-[#7E92A2] text-[14px] font"
@@ -156,8 +159,8 @@ export default function Page() {
                       }}
                     />
                     <FormControlLabel
-                    value="Group school"
-                    name="a"
+                      value="Group school"
+                      name="a"
                       control={<Radio />}
                       label="Group school"
                       className="text-[#7E92A2] text-[14px] font"
@@ -184,10 +187,10 @@ export default function Page() {
                   id="grid-school"
                   type="text"
                   placeholder="eg: NIMS School Dubai"
-                   value={formik.errors.school}
+                  value={formik.errors.school}
                   onChange={(e) => {
                     console.log(e.target.value);
-                    formik.setFieldValue("school",e.target.value)
+                    formik.setFieldValue("school", e.target.value);
                   }}
                 />
                 {formik.errors.school && (
@@ -210,7 +213,7 @@ export default function Page() {
                   value={formik.values.number}
                   onChange={(e) => {
                     console.log(e.target.value);
-                    formik.setFieldValue("number",e.target.value)
+                    formik.setFieldValue("number", e.target.value);
                   }}
                   type="telephone"
                 />
@@ -234,7 +237,7 @@ export default function Page() {
                   value={formik.errors.role}
                   onChange={(e) => {
                     console.log(e.target.value);
-                    formik.setFieldValue("role",e.target.value)
+                    formik.setFieldValue("role", e.target.value);
                   }}
                 />
                 {formik.errors.role && (
@@ -252,7 +255,7 @@ export default function Page() {
               </Button>
             </div>
           </form>
-          <div>{message}</div>
+          <div className="mt-5">{message}</div>
         </div>
       </div>
     </div>

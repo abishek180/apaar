@@ -2,8 +2,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import user from "../Images/User.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
-import quote from "../Images/quote.svg"
+import { Pagination} from "swiper/modules";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const Testimony = () => (
