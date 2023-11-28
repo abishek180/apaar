@@ -76,13 +76,13 @@ export const USP = () => {
             </div>
           </div>
         </div>
-        <div className=" flex gap-2">
-          <div className="font-semibold text-[16px] lg:text-[24px]">
-            Click to View More
-          </div>
-          <button>
+        <div>
+          <button className="flex gap-2 hover:translate-x-2">
+            <div className="font-semibold text-[16px] lg:text-[24px]">
+              Click to View More
+            </div>
             <Image
-              className="w-[20px] h-[20px] lg:w-[24px] lg:h-[30px]"
+              className="w-[20px] h-[20px] lg:w-[24px] lg:h-[30px] "
               src={rightarrow}
               alt="rightarrow"
             />

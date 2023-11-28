@@ -17,9 +17,11 @@ export const NavBar = () => {
       <div className="lg:flex lg:justify-around lg:gap-[180px] lg:mt-3">
         <div className="lg:flex lg:flex-row lg:gap-12">
           <div className="lg:p-0 flex justify-between md:items-center">
-            <p className="lg:text-[24px] text-[32px] lg:p-0 p-5 md:font-black font-extrabold">
-              APAAR
-            </p>
+            <Link href="/components/Myform">
+              <p className="lg:text-[24px] text-[32px] lg:p-0 p-5 md:font-black font-extrabold">
+                APAAR
+              </p>
+            </Link>
             <div
               onClick={handleNav}
               className="block lg:hidden lg:p-0 pt-2 pr-2"
@@ -39,7 +41,7 @@ export const NavBar = () => {
               </li>
               <li className="my-6 md:my-0">
                 <a
-                  href="#"
+                  href=""
                   className="leading-[28px] font-medium hover:text-[grey] flex gap-2"
                 >
                   Product
@@ -48,21 +50,14 @@ export const NavBar = () => {
               </li>
               <li className="my-6 md:my-0">
                 <a
-                  href="#"
+                  href=""
                   className="leading-[28px] font-medium hover:text-[grey]"
                 >
                   About Us
                 </a>
               </li>
-              <Link href="/components/Myform">
-                <li className="my-6 md:my-0">
-                  <a
-                    href="#"
-                    className="leading-[28px] font-medium hover:text-[grey]"
-                  >
+              <Link href="/components/Myform" className="leading-[28px] font-medium hover:text-[grey] my-6 md:my-0">
                     Contact Us
-                  </a>
-                </li>
               </Link>
             </ul>
           </div>
@@ -103,7 +98,7 @@ export const NavBar = () => {
             </li>
             <li className="my-6 md:my-0">
               <a
-                href="#"
+                href=""
                 className="leading-[28px] font-medium hover:text-[grey] flex gap-2"
               >
                 Product
@@ -112,20 +107,15 @@ export const NavBar = () => {
             </li>
             <li className="my-6 md:my-0">
               <a
-                href="#"
+              href=""
                 className="leading-[28px] font-medium hover:text-[grey]"
               >
                 About Us
               </a>
             </li>
-            <li className="my-6 md:my-0">
-              <a
-                href="#"
-                className="leading-[28px] font-medium hover:text-[grey]"
-              >
+            <Link href="/components/Myform"  className="leading-[28px] font-medium hover:text-[grey] my-6 md:my-0">
                 Contact Us
-              </a>
-            </li>
+            </Link>
           </ul>
         </div>
       </div>

@@ -4,11 +4,12 @@ import facebook from "../Images/facebook.svg";
 import twitter from "../Images/twitter.svg";
 import linkdin from "../Images/linkdin.svg";
 import copyright from "../Images/copyright.svg";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className=" bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[129px] lg:pb-[12px] lg:pl-[103px]">
-      <div className="flex flex-col md:flex md:flex-row md:justify-between mb-5">
+    <div className=" bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[229px] lg:pb-[12px] lg:pl-[103px]">
+      <div className="flex flex-col mb-5 md:flex md:flex-row md:justify-between ">
         <div>
           <div className=" text-[32px] font-black ">APAAR</div>
           <div className=" font-plus-jakarta-sans ">
@@ -18,10 +19,10 @@ export const Footer = () => {
           </div>
         </div>
         <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] md:mt-0 mt-10">
-          <div className="font-medium text-[16px]">Home</div>
+          <Link href="/" className="font-medium text-[16px]">Home</Link>
           <div className=" font-medium text-[16px]">Features</div>
           <div className="font-medium text-[16px]">About Us</div>
-          <div className=" font-medium text-[16px]">Contact Us</div>
+          <Link href="/components/Myform" className=" font-medium text-[16px]">Contact Us</Link>
           <div className=" font-medium text-[16px]">Testimonials</div>
           <div className=" font-medium text-[16px]">Blog</div>
         </div>
@@ -30,8 +31,8 @@ export const Footer = () => {
           <div className="font-medium text-[16px]">FAQ</div>
           <div className="font-medium text-[16px]">Privacy Policy</div>
           <div className=" font-medium text-[16px]">Terms of Services</div>
-          <div className=" font-medium text-[16px]">Log In</div>
-          <div className=" font-medium text-[16px]">Request a Demo</div>
+          <Link href="/components/Myform" className=" font-medium text-[16px]">Log In</Link>
+          <Link href="/components/Myform" className=" font-medium text-[16px]">Request a Demo</Link>
         </div>
       </div>
       <hr />
