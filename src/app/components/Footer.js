@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className=" bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[229px] lg:pb-[12px] lg:pl-[103px]">
-      <div className="flex flex-col mb-5 md:flex md:flex-row md:justify-between ">
+    <div className="max-w-screen-2xl bg-[#0F1420]  text-white px-[25px] pt-[60px] pb-5 lg:pt-[100px] lg:pr-[129px] lg:pb-[12px] lg:pl-[103px]">
+      <div className="flex flex-col md:flex md:flex-row md:justify-between mb-5">
         <div>
           <div className=" text-[32px] font-black ">APAAR</div>
           <div className=" font-plus-jakarta-sans ">

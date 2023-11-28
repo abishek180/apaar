@@ -3,7 +3,7 @@ import React from "react";
 export const Business = () => {
   return (
     <div>
-      <div className=" bg-[#D3DFDE] text-left px-[25px] py-[60px] lg:pt-[100px] lg:pr-[229px] lg:pb-[85px] lg:pl-[113px] lg:mt-40 mt-14">
+      <div className=" bg-[#D3DFDE] text-left px-[25px] py-[60px] lg:pt-[100px] lg:pr-[129px] lg:pb-[85px] lg:pl-[103px] lg:mt-40 mt-14 max-w-screen-2xl">
         <div className="lg:flex lg:flex-row flex flex-col ">
           <p className="lg:text-[38px] text-[32px] font-bold ">
             Maximize Your Time, Minimize Administrative Burdens with Apaar
