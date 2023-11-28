@@ -7,7 +7,7 @@ import dollar from "../Images/money-dollar-circle-fill.svg";
 
 export const Features = () => {
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div className="max-w-screen-xl mx-auto">
       <div className=" flex flex-col justify-center items-center text-center md:gap-10 gap-5 md:mt-20 mt-10">
         <div className="lg:w-[900px] md:w-[750px] w-[385px] p-1">
           <h1 className="lg:text-[52px] md:text-[42px] text-[32px] font-extrabold">

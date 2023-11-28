@@ -4,7 +4,7 @@ export const Business = () => {
   return (
     <div>
       <div className="bg-[#D3DFDE] text-left px-[25px] py-[60px] md:px-[25px] md:py-[60px] lg:pt-[100px] lg:pb-[85px] lg:mt-40 mt-14 ">
-        <div className="max-w-screen-lg mx-auto lg:flex lg:flex-row flex flex-col">
+        <div className="max-w-screen-xl mx-auto lg:flex lg:flex-row flex flex-col">
           <p className="lg:text-[38px] text-[32px] font-bold ">
             Maximize Your Time, Minimize Administrative Burdens with Apaar
           </p>
@@ -15,7 +15,7 @@ export const Business = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-screen-lg mx-auto mt-10">
+        <div className="max-w-screen-xl mx-auto mt-10">
           <div className="flex flex-col font-plus-jakarta-sans md:flex md:flex-row md:justify-between md:items-center">
             <div className="leading-normal w-[313px;] ">
               <p className="text-[65px] font-bold">40%</p>
