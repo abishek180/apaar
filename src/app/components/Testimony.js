@@ -6,7 +6,7 @@ import { Pagination} from "swiper/modules";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const Testimony = () => (
-  <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center text-center lg:mt-40 mt-20  gap-10">
+  <div className="max-w-screen-lg flex flex-col justify-center items-center text-center lg:mt-40 mt-20 mx-auto gap-10">
     <div className=" lg:text-[52px] font-extrabold text-[32px] ">
       What they Say?
     </div>
@@ -41,11 +41,11 @@ export const Testimony = () => (
 
         1280: {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 20,
         },
 
         1536:{
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
       }}
