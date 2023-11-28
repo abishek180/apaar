@@ -3,13 +3,13 @@ import React from "react";
 export const Business = () => {
   return (
     <div>
-      <div className=" bg-[#D3DFDE] text-left px-[25px] py-[60px] lg:pt-[100px] lg:pr-[129px] lg:pb-[85px] lg:pl-[103px] lg:mt-40 mt-14 ">
+      <div className="bg-[#D3DFDE] text-left px-[25px] py-[60px] md:px-[25px] md:py-[60px] lg:pt-[100px] lg:pb-[85px] lg:pr-[230px] lg:pl-[230px] lg:mt-40 mt-14 ">
         <div className="lg:flex lg:flex-row flex flex-col max-w-screen-2xl">
           <p className="lg:text-[38px] text-[32px] font-bold ">
             Maximize Your Time, Minimize Administrative Burdens with Apaar
           </p>
-          <div className=" leading-normal font-semibold  lg:mt-0 mt-4">
-            <p className=" text-[16px] ">
+          <div className="leading-normal font-semibold lg:mt-0 mt-4">
+            <p className="text-[16px]">
               Discover how institutions of all sizes are leveraging Apaar
               automated school management platform to create value.
             </p>
@@ -17,7 +17,7 @@ export const Business = () => {
         </div>
         <div className="max-w-screen-2xl mt-10">
           <div className="flex flex-col font-plus-jakarta-sans md:flex md:flex-row md:justify-between md:items-center">
-            <div className=" leading-normal w-[313px;] ">
+            <div className="leading-normal w-[313px;] ">
               <p className="text-[65px] font-bold">40%</p>
               <p className="text-[11.54px] md:w-[210px] w-[301px]">
                 Reduction in administrative tasks, leading to increased job
