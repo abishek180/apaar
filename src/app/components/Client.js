@@ -13,43 +13,19 @@ export const Client = () => {
       </div>
       <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[100.082px] gap-5 lg:mt-20 mt-8 flex flex-col text-[#858585]">
         <div className="flex flex-row justify-around lg:gap-[115.082px] md:gap-24">
-          <div className="flex mr-8 lg:mr-0">
+          <div className="flex">
             <Image src={nmsdubai} alt="nmsdubai" className="lg:w-[195.77px] lg:h-[70.328px] w-[113.369px] h-[45.005px]"/>
-            {/* <div>
-              <p className=" lg:text-[38.361px] text-[24.548px] font-bold">NIMS</p>
-              <p className=" lg:text-[21.738px] text-[13.911px] font-bold">DUBAI</p>
-            </div> */}
           </div>
           <div className="flex">
-            <Image src={layer} alt="ace" className=" lg:w-[195.051px] lg:h-[77.239px] w-[121.189px] h-[48.324px]"/>
-            {/* <div>
-              <p className=" lg:text-[51.995px] text-[32.53px]">ACE</p>
-              <p className="lg:text-[8.09px] text-[5.061px] ">
-                College of Engineering
-              </p>
-            </div> */}
+            <Image src={layer} alt="ace" className=" lg:w-[229.051px] lg:h-[77.239px] w-[121.189px] h-[48.324px]"/>
           </div>
         </div>
         <div className="flex flex-row justify-around lg:gap-[115.082px]  lg:mt-0 my-4 text-[#858585]">
           <div className="flex ml-4 lg:ml-0 ">
-            <Image src={oxford} alt="oxford" className="lg:w-[225px] lg:h-[65px] w-[132.984px] h-[46px]" />
-            {/* <div className="mt-2 ">
-              <p className="lg:text-[20.459px] text-[12.066px] font-extrabold">
-                OXFORD SCHOOL
-              </p>
-              <p className="lg:text-[16.623px] text-[9.803px] font-bold">CALICUT</p>
-            </div> */}
+            <Image src={oxford} alt="oxford" className="lg:w-[245px] lg:h-[65px] w-[132.984px] h-[46px]" />
           </div>
           <div className="flex">
-            <Image src={oxford1} alt="oxford" className="lg:w-[225px] lg:h-[65px] w-[132.984px] h-[46px]"/>
-            {/* <div className="mt-2">
-              <p className=" lg:text-[20.459px] text-[12.066px] font-extrabold">
-                OXFORD SCHOOL
-              </p>
-              <p className=" lg:text-[16.623px] text-[9.803px] font-bold">
-                TRIVANDRUM
-              </p>
-            </div> */}
+            <Image src={oxford1} alt="oxford" className="lg:w-[245px] lg:h-[65px] w-[132.984px] h-[46px]"/>
           </div>
         </div>
       </div>
