@@ -55,7 +55,7 @@ export default function Page() {
           "template_e7wa7ls",
           {
             to_name: e.name,
-            option: e.radioradio,
+            option: e.radio,
             school: e.school,
             number: e.number,
             role: e.role,
@@ -65,7 +65,7 @@ export default function Page() {
         .then(
           (result) => {
             if (result.status === 200) {
-              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center"> Thank you. We have received your request and our team will contact you within 48 hours to assist</span></div>);
+              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center">Thanks for getting in touch. Our team will contact you within 48 hours.</span></div>);
             }
             console.log(result.text);
           },
