@@ -4,10 +4,8 @@ import google22 from "../Images/google.png";
 import dashboard from "../Images/apaar-app-screen.png";
 import Image from "next/image";
 import rightline from "../Images/right-outline.svg";
-import { Button, Modal, ModalFooter, ModalHeader, ModalBody } from "reactstrap";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
 
 export const Hero = () => {
   return (

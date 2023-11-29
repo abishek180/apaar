@@ -16,13 +16,6 @@ import * as yup from "yup";
 import { FaCircleCheck } from "react-icons/fa6";
 
 export default function Page() {
-  // const [name, setName] = useState("");
-  // const [radio, setRadio] = useState("");
-  // const [number, setNumber] = useState("");
-  // const [school, setSchool] = useState("");
-  // const [role, setRole] = useState("");
-  // const [errors, setErrors] = useState({});
-  // const [isFormValid, setIsFormValid] = useState(false);
   const [message, setMessage] = useState("");
 
   const formik = useFormik({
@@ -65,7 +58,15 @@ export default function Page() {
         .then(
           (result) => {
             if (result.status === 200) {
-              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center">Thanks for getting in touch. Our team will contact you within 48 hours.</span></div>);
+              setMessage(
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <FaCircleCheck className="text-[green] text-[50px]" />
+                  <span className="text-[green] text-center">
+                    Thanks for getting in touch. Our team will contact you
+                    within 48 hours.
+                  </span>
+                </div>
+              );
             }
             console.log(result.text);
           },
@@ -101,11 +102,12 @@ export default function Page() {
               <p className="text-[#060606] text-[24px] lg:text-[32px] font-extrabold">
                 Digitize your school in minutes with Apaar integrated platform
               </p>
-              
-                <Link href="/">
-                  <Image src={close} className=" w-[80px] hover:bg-gray-400 rounded-[50%]" />
-                </Link>
-              
+              <Link href="/">
+                <Image
+                  src={close}
+                  className=" w-[80px] hover:bg-gray-400 rounded-[50%]"
+                />
+              </Link>
             </div>
             <div class="mb-6 mt-10">
               <div class="w-full  mb-6 md:mb-0">
@@ -130,7 +132,9 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.name && (
-                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.name}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">
+                    {formik.errors.name}
+                  </p>
                 )}
               </div>
               <div class="w-full">
@@ -170,8 +174,10 @@ export default function Page() {
                     />
                   </RadioGroup>
                   {formik.errors.radio && (
-                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.radio}</p>
-                )}
+                    <p className="text-[red] text-[14px] mb-[6px]">
+                      {formik.errors.radio}
+                    </p>
+                  )}
                 </FormControl>
               </div>
             </div>
@@ -195,7 +201,9 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.school && (
-                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.school}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">
+                    {formik.errors.school}
+                  </p>
                 )}
               </div>
             </div>
@@ -219,10 +227,11 @@ export default function Page() {
                   type="telephone"
                 />
                 {formik.errors.number && (
-                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.number}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">
+                    {formik.errors.number}
+                  </p>
                 )}
               </div>
-
               <div class="w-full md:w-1/2  mb-6 md:mb-0">
                 <label
                   class="block uppercase tracking-wide text-gray-700 text-[12px] font-bold mb-2"
@@ -242,11 +251,12 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.role && (
-                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.role}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">
+                    {formik.errors.role}
+                  </p>
                 )}
               </div>
             </div>
-
             <div className="mt-5">
               <Button
                 className="px-[64px] py-[17px] bg-[#2C2C2C] rounded-[12px] text-[20px] font-bold text-[#FFFFFF] lg:w-[400px] w-[382px] hover:bg-black"
@@ -262,4 +272,3 @@ export default function Page() {
     </div>
   );
 }
-

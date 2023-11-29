@@ -3,7 +3,6 @@ import cta from "../Images/bg-cta.png";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export const CTA = () => {
   return (
     <div className="px-0 md:px-24 ">
