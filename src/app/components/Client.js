@@ -12,7 +12,7 @@ export const Client = () => {
         <span className="text-gray-700 font-normal">Our Trusted</span><span className="font-bold  text-[#000]">Users</span>
       </div>
       <div className="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[100.082px] gap-5 lg:mt-20 mt-8 flex flex-col text-[#858585]">
-        <div className="flex flex-row justify-around lg:gap-[115.082px] md:gap-24">
+        <div className="flex flex-row justify-around lg:gap-[115.082px] md:gap-">
           <div className="flex">
             <Image src={nmsdubai} alt="nmsdubai" className="lg:w-[195.77px] lg:h-[70.328px] w-[113.369px] h-[45.005px]"/>
           </div>

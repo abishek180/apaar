@@ -18,7 +18,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] md:mt-0 mt-10">
+        <div className="flex flex-col items-start justify-start gap-[13.74px]  md:text-[20.61px] text-[16px] mr-0 mt-10 md:mt-0 md:mr-[80px] lg:mr-[160px]">
           <Link href="/" className="font-medium text-[16px]">
             Home
           </Link>
@@ -30,7 +30,7 @@ export const Footer = () => {
           <div className=" font-medium text-[16px]">Testimonials</div>
           <div className=" font-medium text-[16px]">Blog</div>
         </div>
-        <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] md:mt-0 mt-10">
+        <div className=" flex flex-col items-start justify-start gap-[13.74px] md:text-[20.61px] text-[16px] mr-0 mt-10 md:mt-0 md:mr-[70px] lg:mr-[170px]">
           <div className=" font-medium text-[16px]">Support</div>
           <div className="font-medium text-[16px]">FAQ</div>
           <div className="font-medium text-[16px]">Privacy Policy</div>
@@ -44,7 +44,7 @@ export const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="max-w-screen-xl mx-auto md:mt-5 mt-3 md:flex md:flex-row md:justify-between flex flex-col">
+      <div className="max-w-screen-xl mx-auto md:mt-5 mt-3 md:flex md:flex-row md:justify-between flex flex-col ">
         <p className="text-[16px] md:flex flex justify-center ">
           <Image
             src={copyright}
