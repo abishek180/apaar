@@ -65,7 +65,7 @@ export default function Page() {
         .then(
           (result) => {
             if (result.status === 200) {
-              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center"> "Thank you. We have received your request and our team will contact you within 48 hours to assist"</span></div>);
+              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center"> Thank you. We have received your request and our team will contact you within 48 hours to assist</span></div>);
             }
             console.log(result.text);
           },

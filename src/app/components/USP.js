@@ -77,7 +77,7 @@ export const USP = () => {
           </div>
         </div>
         <div>
-          <button className="flex gap-2 hover:translate-x-2">
+          <button className="flex gap-2 rounded-[15px] p-2 hover:bg-gray-300">
             <div className="font-semibold text-[16px] lg:text-[24px]">
               Click to View More
             </div>
