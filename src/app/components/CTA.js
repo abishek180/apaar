@@ -16,8 +16,7 @@ export const CTA = () => {
         </p>
         <div className=" font-medium">
           <p className="text-[16px] w-[348px] md:w-[450px]">
-            Start using the best school management software platform now- and
-            its free!
+            Start using the best school management software platform now- and its free!
           </p>
         </div>
         <div className="md:flex md:flex-row sm:flex sm:flex-col gap-5 z-[1]">

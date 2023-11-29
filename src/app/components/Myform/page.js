@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Image from "next/image";
 import sidedashboard from "../../Images/sidedashboard.png";
 import { Button } from "reactstrap";
@@ -7,7 +7,6 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
 import emailjs from "@emailjs/browser";
 import close from "/src/app/Images/close.svg";
 import Link from "next/link";

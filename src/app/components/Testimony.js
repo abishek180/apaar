@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import user from "../Images/User.png";
 import { Swiper, SwiperSlide } from "swiper/react";
