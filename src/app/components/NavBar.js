@@ -17,7 +17,7 @@ export const NavBar = () => {
       <div className="max-w-screen-xl mx-auto lg:flex lg:justify-around lg:gap-[180px] lg:mt-3">
         <div className="lg:flex lg:flex-row lg:gap-12">
           <div className="lg:p-0 flex justify-between md:items-center">
-            <Link href="/components/Myform">
+            <Link href="/">
               <p className="lg:text-[24px] text-[32px] lg:p-0 p-5 md:font-black font-extrabold">
                 APAAR
               </p>

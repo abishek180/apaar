@@ -65,7 +65,7 @@ export default function Page() {
         .then(
           (result) => {
             if (result.status === 200) {
-              setMessage(<div className="flex justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[25px]"/><span className="text-[green]"> successfully submitted</span></div>);
+              setMessage(<div className="flex flex-col justify-center items-center gap-2"><FaCircleCheck className="text-[green] text-[50px]"/><span className="text-[green] text-center"> "Thank you. We have received your request and our team will contact you within 48 hours to assist"</span></div>);
             }
             console.log(result.text);
           },
@@ -123,7 +123,6 @@ export default function Page() {
                   YOUR
                   NAME
                   placeholder="Enter Your Name"
-                  style={styles.input}
                   value={formik.values.name}
                   onChange={(e) => {
                     console.log(e.target.value);
@@ -131,7 +130,7 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.name && (
-                  <p style={styles.error}>{formik.errors.name}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.name}</p>
                 )}
               </div>
               <div class="w-full">
@@ -171,7 +170,7 @@ export default function Page() {
                     />
                   </RadioGroup>
                   {formik.errors.radio && (
-                  <p style={styles.error}>{formik.errors.radio}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.radio}</p>
                 )}
                 </FormControl>
               </div>
@@ -196,7 +195,7 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.school && (
-                  <p style={styles.error}>{formik.errors.school}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.school}</p>
                 )}
               </div>
             </div>
@@ -220,7 +219,7 @@ export default function Page() {
                   type="telephone"
                 />
                 {formik.errors.number && (
-                  <p style={styles.error}>{formik.errors.number}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.number}</p>
                 )}
               </div>
 
@@ -243,7 +242,7 @@ export default function Page() {
                   }}
                 />
                 {formik.errors.role && (
-                  <p style={styles.error}>{formik.errors.role}</p>
+                  <p className="text-[red] text-[14px] mb-[6px]">{formik.errors.role}</p>
                 )}
               </div>
             </div>
@@ -263,10 +262,4 @@ export default function Page() {
     </div>
   );
 }
-const styles = {
-  error: {
-    color: "red",
-    fontSize: "14px",
-    marginBottom: "6px",
-  },
-};
+

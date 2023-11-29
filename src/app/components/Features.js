@@ -35,7 +35,7 @@ export const Features = () => {
               reports for academic progress.
             </p>
           </div>
-          <Image src={dashboard2} alt="dashboard" className="h-[226px] md:h-[425px] lg:h-[400px]"/>
+          <Image src={dashboard2} alt="dashboard" className="h-[216px] md:h-[425px] lg:h-[425px] "/>
         </div>
         <div className="md:w-[608px] md:h-[635px] w-[383px] h-[403px] rounded-3xl [background:linear-gradient(180deg,_#fff_36.66%,_#fff9e1)]  border-[1px] border-solid border-gainsboro-200 p-5 lg:mt-0 mt-8">
           <div className="md:w-[70px] md:h-[70px] w-[44.441px] h-[44.441px] [background:linear-gradient(180deg,_#FDE5DC_0%,_#FFDBCE_100%)]  rounded-[16px] flex justify-center items-center px-3 py-3">
@@ -50,7 +50,7 @@ export const Features = () => {
               payments, and customizable fee structures
             </p>
           </div>
-          <Image src={dashboard3} alt="dashboard" className="h-[226px] md:h-[425px] lg:h-[365px]"/>
+          <Image src={dashboard3} alt="dashboard" className="h-[226px] md:h-[425px] lg:h-[415px]"/>
         </div>
       </div>
     </div>

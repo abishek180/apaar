@@ -122,11 +122,10 @@ export const Testimony = () => (
             <p>
               “Apaar School Management has been a revelation for our school.
               Instead of juggling multiple software, it seamlessly integrates
-              all aspects, making life easier for our admin staff and teachers.
-              Were excited to continue maximizing Apaar potential.”
+              all aspects, making life easier for our admin staff and teachers.”
             </p>
           </div>
-          <RiDoubleQuotesL className="text-[80px] text-[#BAE7BE]"/>
+          <RiDoubleQuotesL className="text-[80px] text-[#BAE7BE] mt-6"/>
         </div>
       </SwiperSlide>
       <SwiperSlide className="mt-4 p-4">
