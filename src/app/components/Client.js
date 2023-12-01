@@ -7,7 +7,7 @@ import layer from "../Images/ace college.png";
 
 export const Client = () => {
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div className="max-w-screen-xl mx-auto">
       <div className=" md:text-[24px] text-[12px] leading-normal  lg:mt-[150px] mt-16 flex justify-center gap-1">
         <span className="text-gray-700 font-normal">Our Trusted</span>
         <span className="font-bold  text-[#000]">Users</span>
@@ -18,14 +18,14 @@ export const Client = () => {
             <Image
               src={nmsdubai}
               alt="nmsdubai"
-              className="lg:w-[195.77px] lg:h-[70.328px] w-[113.369px] h-[45.005px]"
+              className="lg:w-[155.77px] lg:h-[70.328px] w-[113.369px] h-[45.005px]"
             />
           </div>
           <div className="flex">
             <Image
               src={layer}
               alt="ace"
-              className=" lg:w-[229.051px] lg:h-[77.239px] w-[121.189px] h-[48.324px]"
+              className=" lg:w-[190.051px] lg:h-[77.239px] w-[121.189px] h-[48.324px]"
             />
           </div>
         </div>
@@ -34,14 +34,14 @@ export const Client = () => {
             <Image
               src={oxford}
               alt="oxford"
-              className="lg:w-[245px] lg:h-[65px] w-[132.984px] h-[46px]"
+              className="lg:w-[205px] lg:h-[70px] w-[132.984px] h-[46px]"
             />
           </div>
           <div className="flex">
             <Image
               src={oxford1}
               alt="oxford"
-              className="lg:w-[245px] lg:h-[65px] w-[132.984px] h-[46px]"
+              className="lg:w-[205px] lg:h-[70px] w-[132.984px] h-[46px]"
             />
           </div>
         </div>
